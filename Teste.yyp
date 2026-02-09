@@ -19,13 +19,15 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.2.213",
+    "IDEVersion":"2024.14.3.217",
   },
   "name":"Teste",
   "resources":[
     {"id":{"name":"oIara","path":"objects/oIara/oIara.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"Iara_Andando","path":"sprites/Iara_Andando/Iara_Andando.yy",},},
     {"id":{"name":"Iara_Parada","path":"sprites/Iara_Parada/Iara_Parada.yy",},},
+    {"id":{"name":"Iara_Subindo","path":"sprites/Iara_Subindo/Iara_Subindo.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",

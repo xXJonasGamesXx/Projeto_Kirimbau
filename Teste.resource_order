@@ -1,0 +1,7 @@
+{
+  "FolderOrderSettings":[],
+  "ResourceOrderSettings":[
+    {"name":"Iara_Parada","order":1,"path":"sprites/Iara_Parada/Iara_Parada.yy",},
+    {"name":"Iara_Subindo","order":2,"path":"sprites/Iara_Subindo/Iara_Subindo.yy",},
+  ],
+}
