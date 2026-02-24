@@ -1,7 +1,16 @@
 {
   "FolderOrderSettings":[],
   "ResourceOrderSettings":[
-    {"name":"Iara_Parada","order":1,"path":"sprites/Iara_Parada/Iara_Parada.yy",},
+    {"name":"oParede","order":1,"path":"objects/oParede/oParede.yy",},
+    {"name":"oSensor","order":2,"path":"objects/oSensor/oSensor.yy",},
+    {"name":"Floresta","order":1,"path":"rooms/Floresta/Floresta.yy",},
+    {"name":"Iara_Descendo","order":3,"path":"sprites/Iara_Descendo/Iara_Descendo.yy",},
+    {"name":"Iara_ParadaC","order":5,"path":"sprites/Iara_ParadaC/Iara_ParadaC.yy",},
+    {"name":"Iara_ParadaF","order":1,"path":"sprites/Iara_ParadaF/Iara_ParadaF.yy",},
+    {"name":"Iara_ParadaL","order":4,"path":"sprites/Iara_ParadaL/Iara_ParadaL.yy",},
     {"name":"Iara_Subindo","order":2,"path":"sprites/Iara_Subindo/Iara_Subindo.yy",},
+    {"name":"sFloresta","order":8,"path":"sprites/sFloresta/sFloresta.yy",},
+    {"name":"sParede","order":7,"path":"sprites/sParede/sParede.yy",},
+    {"name":"sQuarto","order":6,"path":"sprites/sQuarto/sQuarto.yy",},
   ],
 }

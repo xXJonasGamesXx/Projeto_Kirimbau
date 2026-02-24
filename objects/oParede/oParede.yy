@@ -1,12 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"oIara",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"oParede",
+  "eventList":[],
   "managed":true,
-  "name":"oIara",
+  "name":"oParede",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",
@@ -31,9 +28,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Iara_ParadaF",
-    "path":"sprites/Iara_ParadaF/Iara_ParadaF.yy",
+    "name":"sParede",
+    "path":"sprites/sParede/sParede.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }
