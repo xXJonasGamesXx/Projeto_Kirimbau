@@ -1,20 +1,20 @@
-if keyboard_check(vk_up) && !place_meeting(x, y - 1, oParede)
+if keyboard_check(vk_up) && !place_meeting(x, y - 2, oParede)
 {
     y -= 1;
     sprite_index = Iara_Subindo;
 }
-else if keyboard_check(vk_down) && !place_meeting(x, y + 1, oParede)
+else if keyboard_check(vk_down) && !place_meeting(x, y + 2, oParede)
 {
     y += 1;
     sprite_index = Iara_Descendo;
 }
-else if keyboard_check(vk_left) && !place_meeting(x - 1, y, oParede)
+else if keyboard_check(vk_left) && !place_meeting(x - 2, y, oParede)
 {
     x -= 1;
     image_xscale = -1; 
     sprite_index = Iara_Andando;
 }
-else if keyboard_check(vk_right) && !place_meeting(x + 1, y, oParede)
+else if keyboard_check(vk_right) && !place_meeting(x + 2, y, oParede)
 {
     x += 1;
     image_xscale = 1;

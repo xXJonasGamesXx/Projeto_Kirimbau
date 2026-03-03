@@ -2,7 +2,7 @@
   "FolderOrderSettings":[],
   "ResourceOrderSettings":[
     {"name":"oParede","order":1,"path":"objects/oParede/oParede.yy",},
-    {"name":"oSensor","order":2,"path":"objects/oSensor/oSensor.yy",},
+    {"name":"oTransicao","order":2,"path":"objects/oTransicao/oTransicao.yy",},
     {"name":"Floresta","order":1,"path":"rooms/Floresta/Floresta.yy",},
     {"name":"Iara_Descendo","order":3,"path":"sprites/Iara_Descendo/Iara_Descendo.yy",},
     {"name":"Iara_ParadaC","order":5,"path":"sprites/Iara_ParadaC/Iara_ParadaC.yy",},
@@ -12,5 +12,6 @@
     {"name":"sFloresta","order":8,"path":"sprites/sFloresta/sFloresta.yy",},
     {"name":"sParede","order":7,"path":"sprites/sParede/sParede.yy",},
     {"name":"sQuarto","order":6,"path":"sprites/sQuarto/sQuarto.yy",},
+    {"name":"sTransicao","order":9,"path":"sprites/sTransicao/sTransicao.yy",},
   ],
 }

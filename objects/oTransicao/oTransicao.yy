@@ -1,9 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"oSensor",
-  "eventList":[],
+  "%Name":"oTransicao",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"oSensor",
+  "name":"oTransicao",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",
@@ -27,7 +29,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sTransicao",
+    "path":"sprites/sTransicao/sTransicao.yy",
+  },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }
