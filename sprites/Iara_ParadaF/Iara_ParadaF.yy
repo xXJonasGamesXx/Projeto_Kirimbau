@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"v2",
+  "$GMSprite":"",
   "%Name":"Iara_ParadaF",
   "bboxMode":2,
   "bbox_bottom":31,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"b0e61a41-7a7e-46a9-a7cd-98110ffa71ef","name":"b0e61a41-7a7e-46a9-a7cd-98110ffa71ef","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"b0e61a41-7a7e-46a9-a7cd-98110ffa71ef","name":"b0e61a41-7a7e-46a9-a7cd-98110ffa71ef","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -63,6 +63,8 @@
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
+    "seqHeight":32.0,
+    "seqWidth":19.0,
     "showBackdrop":true,
     "showBackdropImage":false,
     "timeUnits":1,
