@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"Iara_ParadaL",
   "bboxMode":2,
   "bbox_bottom":31,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"8fd2ec37-3dbf-477d-b906-96f80e3c6d6e","name":"8fd2ec37-3dbf-477d-b906-96f80e3c6d6e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"8fd2ec37-3dbf-477d-b906-96f80e3c6d6e","name":"8fd2ec37-3dbf-477d-b906-96f80e3c6d6e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

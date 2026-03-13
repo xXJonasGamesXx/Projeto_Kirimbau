@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"sFloresta",
   "bboxMode":0,
   "bbox_bottom":177,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"0afc23ac-abc6-4ca1-aa7f-4f795819432c","name":"0afc23ac-abc6-4ca1-aa7f-4f795819432c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"0afc23ac-abc6-4ca1-aa7f-4f795819432c","name":"0afc23ac-abc6-4ca1-aa7f-4f795819432c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"Iara_Andando",
   "bboxMode":2,
   "bbox_bottom":31,
@@ -12,8 +12,8 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"63486ba2-0770-494a-a3f6-ab6240824b87","name":"63486ba2-0770-494a-a3f6-ab6240824b87","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"b8b9a363-4a71-4888-9f1f-fb46b76fbf2a","name":"b8b9a363-4a71-4888-9f1f-fb46b76fbf2a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"63486ba2-0770-494a-a3f6-ab6240824b87","name":"63486ba2-0770-494a-a3f6-ab6240824b87","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"b8b9a363-4a71-4888-9f1f-fb46b76fbf2a","name":"b8b9a363-4a71-4888-9f1f-fb46b76fbf2a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

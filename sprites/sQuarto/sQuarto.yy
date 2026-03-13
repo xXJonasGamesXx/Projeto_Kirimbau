@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"sQuarto",
   "bboxMode":0,
   "bbox_bottom":177,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"2b84db3d-02c5-424b-9a10-726b3433db06","name":"2b84db3d-02c5-424b-9a10-726b3433db06","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"2b84db3d-02c5-424b-9a10-726b3433db06","name":"2b84db3d-02c5-424b-9a10-726b3433db06","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
