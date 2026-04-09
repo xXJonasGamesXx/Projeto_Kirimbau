@@ -30,6 +30,9 @@
     {"id":{"name":"oTransicao","path":"objects/oTransicao/oTransicao.yy",},},
     {"id":{"name":"Floresta","path":"rooms/Floresta/Floresta.yy",},},
     {"id":{"name":"Quarto","path":"rooms/Quarto/Quarto.yy",},},
+    {"id":{"name":"rm_casa","path":"rooms/rm_casa/rm_casa.yy",},},
+    {"id":{"name":"rm_quintal","path":"rooms/rm_quintal/rm_quintal.yy",},},
+    {"id":{"name":"Room5","path":"rooms/Room5/Room5.yy",},},
     {"id":{"name":"Iara_Andando","path":"sprites/Iara_Andando/Iara_Andando.yy",},},
     {"id":{"name":"Iara_Descendo","path":"sprites/Iara_Descendo/Iara_Descendo.yy",},},
     {"id":{"name":"Iara_ParadaC","path":"sprites/Iara_ParadaC/Iara_ParadaC.yy",},},
@@ -39,6 +42,7 @@
     {"id":{"name":"sFloresta","path":"sprites/sFloresta/sFloresta.yy",},},
     {"id":{"name":"sParede","path":"sprites/sParede/sParede.yy",},},
     {"id":{"name":"sQuarto","path":"sprites/sQuarto/sQuarto.yy",},},
+    {"id":{"name":"sSala","path":"sprites/sSala/sSala.yy",},},
     {"id":{"name":"sTransicao","path":"sprites/sTransicao/sTransicao.yy",},},
   ],
   "resourceType":"GMProject",
@@ -46,6 +50,9 @@
   "RoomOrderNodes":[
     {"roomId":{"name":"Quarto","path":"rooms/Quarto/Quarto.yy",},},
     {"roomId":{"name":"Floresta","path":"rooms/Floresta/Floresta.yy",},},
+    {"roomId":{"name":"rm_casa","path":"rooms/rm_casa/rm_casa.yy",},},
+    {"roomId":{"name":"rm_quintal","path":"rooms/rm_quintal/rm_quintal.yy",},},
+    {"roomId":{"name":"Room5","path":"rooms/Room5/Room5.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
