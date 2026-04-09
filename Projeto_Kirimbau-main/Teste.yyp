@@ -19,10 +19,12 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.13.1.193",
+    "IDEVersion":"2024.14.2.212",
   },
   "name":"Teste",
   "resources":[
+    {"id":{"name":"obj_porta","path":"objects/obj_porta/obj_porta.yy",},},
+    {"id":{"name":"obj_transition","path":"objects/obj_transition/obj_transition.yy",},},
     {"id":{"name":"oIara","path":"objects/oIara/oIara.yy",},},
     {"id":{"name":"oParede","path":"objects/oParede/oParede.yy",},},
     {"id":{"name":"oTransicao","path":"objects/oTransicao/oTransicao.yy",},},
