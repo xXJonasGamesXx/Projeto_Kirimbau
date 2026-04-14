@@ -27,16 +27,13 @@ if (!keyboard_check(vk_up) && !keyboard_check(vk_down) && !keyboard_check(vk_lef
     if (sprite_index == Iara_Descendo) sprite_index = Iara_ParadaF; 
     if (sprite_index == Iara_Andando)  sprite_index = Iara_ParadaL; 
 }
+
 var porta = instance_place(x, y, obj_porta);
 
 if (porta != noone && keyboard_check_pressed(ord("E"))) {
-    if (!instance_exists(obj_transition)) {
 
-        // (opcional) salvar posição de spawn
-        global.spawn_x = porta.spawn_x;
-        global.spawn_y = porta.spawn_y;
+    global.spawn_x = porta.spawn_x;
+    global.spawn_y = porta.spawn_y;
 
-        var t = instance_create_layer(0, 0, "Instances", obj_transition);
-        t.proxima_room = porta.destino;
-    }
+    room_goto(porta.destino);
 }
