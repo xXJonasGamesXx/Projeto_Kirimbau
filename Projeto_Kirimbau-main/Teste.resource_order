@@ -1,10 +1,8 @@
 {
   "FolderOrderSettings":[],
   "ResourceOrderSettings":[
-    {"name":"obj_controller","order":5,"path":"objects/obj_controller/obj_controller.yy",},
-    {"name":"obj_porta","order":4,"path":"objects/obj_porta/obj_porta.yy",},
-    {"name":"obj_transition","order":3,"path":"objects/obj_transition/obj_transition.yy",},
     {"name":"oParede","order":1,"path":"objects/oParede/oParede.yy",},
+    {"name":"oTransicao_1","order":3,"path":"objects/oTransicao_1/oTransicao_1.yy",},
     {"name":"oTransicao","order":2,"path":"objects/oTransicao/oTransicao.yy",},
     {"name":"Floresta","order":1,"path":"rooms/Floresta/Floresta.yy",},
     {"name":"rm_casa","order":2,"path":"rooms/rm_casa/rm_casa.yy",},

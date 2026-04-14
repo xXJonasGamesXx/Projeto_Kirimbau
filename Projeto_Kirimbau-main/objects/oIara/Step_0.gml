@@ -28,12 +28,3 @@ if (!keyboard_check(vk_up) && !keyboard_check(vk_down) && !keyboard_check(vk_lef
     if (sprite_index == Iara_Andando)  sprite_index = Iara_ParadaL; 
 }
 
-var porta = instance_place(x, y, obj_porta);
-
-if (porta != noone && keyboard_check_pressed(ord("E"))) {
-
-    global.spawn_x = porta.spawn_x;
-    global.spawn_y = porta.spawn_y;
-
-    room_goto(porta.destino);
-}
