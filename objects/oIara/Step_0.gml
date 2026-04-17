@@ -27,3 +27,4 @@ if (!keyboard_check(vk_up) && !keyboard_check(vk_down) && !keyboard_check(vk_lef
     if (sprite_index == Iara_Descendo) sprite_index = Iara_ParadaF; 
     if (sprite_index == Iara_Andando)  sprite_index = Iara_ParadaL; 
 }
+
