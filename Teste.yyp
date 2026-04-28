@@ -19,11 +19,10 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.4.222",
+    "IDEVersion":"2024.14.3.217",
   },
   "name":"Teste",
   "resources":[
-    {"id":{"name":"oControlador","path":"objects/oControlador/oControlador.yy",},},
     {"id":{"name":"oIara","path":"objects/oIara/oIara.yy",},},
     {"id":{"name":"oParede","path":"objects/oParede/oParede.yy",},},
     {"id":{"name":"oTransicao","path":"objects/oTransicao/oTransicao.yy",},},
