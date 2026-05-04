@@ -1,7 +1,11 @@
 {
   "FolderOrderSettings":[],
   "ResourceOrderSettings":[
+    {"name":"oDialogo","order":6,"path":"objects/oDialogo/oDialogo.yy",},
+    {"name":"oMae","order":4,"path":"objects/oMae/oMae.yy",},
+    {"name":"oPai","order":3,"path":"objects/oPai/oPai.yy",},
     {"name":"oParede","order":1,"path":"objects/oParede/oParede.yy",},
+    {"name":"oParNPC","order":5,"path":"objects/oParNPC/oParNPC.yy",},
     {"name":"oTransicao","order":2,"path":"objects/oTransicao/oTransicao.yy",},
     {"name":"Floresta","order":1,"path":"rooms/Floresta/Floresta.yy",},
     {"name":"rm_casa","order":2,"path":"rooms/rm_casa/rm_casa.yy",},
@@ -14,6 +18,8 @@
     {"name":"Iara_Subindo","order":2,"path":"sprites/Iara_Subindo/Iara_Subindo.yy",},
     {"name":"sFloresta","order":8,"path":"sprites/sFloresta/sFloresta.yy",},
     {"name":"sfloresta2","order":12,"path":"sprites/sfloresta2/sfloresta2.yy",},
+    {"name":"sMae","order":13,"path":"sprites/sMae/sMae.yy",},
+    {"name":"sPai","order":14,"path":"sprites/sPai/sPai.yy",},
     {"name":"sParede","order":7,"path":"sprites/sParede/sParede.yy",},
     {"name":"sQuarto","order":6,"path":"sprites/sQuarto/sQuarto.yy",},
     {"name":"sQuintal","order":11,"path":"sprites/sQuintal/sQuintal.yy",},
