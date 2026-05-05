@@ -1,6 +1,10 @@
 {
-  "FolderOrderSettings":[],
+  "FolderOrderSettings":[
+    {"name":"Fontes","order":2,"path":"folders/Fontes.yy",},
+    {"name":"Scripts","order":1,"path":"folders/Scripts.yy",},
+  ],
   "ResourceOrderSettings":[
+    {"name":"oControle","order":7,"path":"objects/oControle/oControle.yy",},
     {"name":"oDialogo","order":6,"path":"objects/oDialogo/oDialogo.yy",},
     {"name":"oMae","order":4,"path":"objects/oMae/oMae.yy",},
     {"name":"oPai","order":3,"path":"objects/oPai/oPai.yy",},

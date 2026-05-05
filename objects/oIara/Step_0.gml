@@ -31,3 +31,16 @@ else
     if (sprite_index == Iara_Descendo) sprite_index = Iara_ParadaF;
     if (sprite_index == Iara_Andando)  sprite_index = Iara_ParadaL;
 }
+
+
+if distance_to_object(oParNPC) <= 10{
+	if keyboard_check_pressed(ord("E")){
+		var _npc = instance_nearest(x, y, oParNPC);
+		var _dialogo = instance_create_layer(x, y, "Dialogo", oDialogo);
+		_dialogo.npc_nome = _npc.nome;
+	}
+}
+
+
+
+
