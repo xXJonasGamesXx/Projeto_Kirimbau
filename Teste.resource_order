@@ -4,7 +4,7 @@
     {"name":"Scripts","order":1,"path":"folders/Scripts.yy",},
   ],
   "ResourceOrderSettings":[
-    {"name":"Font2","order":1,"path":"fonts/Font2/Font2.yy",},
+    {"name":"fnt_telainicial","order":1,"path":"fonts/fnt_telainicial/fnt_telainicial.yy",},
     {"name":"oControle","order":7,"path":"objects/oControle/oControle.yy",},
     {"name":"oDialogo","order":6,"path":"objects/oDialogo/oDialogo.yy",},
     {"name":"oMae","order":4,"path":"objects/oMae/oMae.yy",},

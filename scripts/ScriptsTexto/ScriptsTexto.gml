@@ -1,7 +1,9 @@
 function scr_textos(){
 	switch npc_nome {
 		case "Pai":
-			ds_grid_add_text("Iara, volte a dormir!", sIconPai, 1, "Pai")
+			ds_grid_add_text("Iara, volte a dormir!", sIconPai, 1, "Pai");
+			ds_grid_add_text("Está muito cedo, eu e sua mãe estamos indo trabalhar", sIconPai, 1, "Pai");
+			ds_grid_add_text("Se comporte, senão a CUCA aparece...", sIconPai, 1, "Pai");
 		break;
 	}
 }

@@ -28,7 +28,7 @@
   "name":"Teste",
   "resources":[
     {"id":{"name":"fnt_dialogo","path":"fonts/fnt_dialogo/fnt_dialogo.yy",},},
-    {"id":{"name":"Font2","path":"fonts/Font2/Font2.yy",},},
+    {"id":{"name":"fnt_telainicial","path":"fonts/fnt_telainicial/fnt_telainicial.yy",},},
     {"id":{"name":"oControle","path":"objects/oControle/oControle.yy",},},
     {"id":{"name":"oDialogo","path":"objects/oDialogo/oDialogo.yy",},},
     {"id":{"name":"oIara","path":"objects/oIara/oIara.yy",},},
