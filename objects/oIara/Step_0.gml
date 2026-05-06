@@ -1,9 +1,11 @@
-var up, down, left, right;
+var up = 0, down = 0, left = 0, right = 0;
 
+if (global.dialogo == false) {
 up = keyboard_check(vk_up);
 down = keyboard_check(vk_down);
 left = keyboard_check(vk_left);
 right = keyboard_check(vk_right);
+}
 
 velh = (right - left) * max_vel;
 velv = (down - up) * max_vel;
@@ -33,13 +35,18 @@ else
 }
 
 
-if distance_to_object(oParNPC) <= 10{
-	if keyboard_check_pressed(ord("E")){
+if distance_to_object(oParNPC) <= 10 {
+	if keyboard_check_pressed(ord("E")) and global.dialogo == false {
 		var _npc = instance_nearest(x, y, oParNPC);
-		var _dialogo = instance_create_layer(x, y, "Dialogo", oDialogo);
-		_dialogo.npc_nome = _npc.nome;
+		
+		if (variable_instance_exists(_npc, "nome")) {
+		    var _dialogo = instance_create_layer(x, y, "Dialogo", oDialogo);
+		    _dialogo.npc_nome = _npc.nome;
+		}
 	}
 }
+
+depth = -bbox_bottom;
 
 
 

@@ -17,6 +17,7 @@
     {"name":"inst_399B8914","path":"rooms/rm_casa/rm_casa.yy",},
     {"name":"inst_9B4E250","path":"rooms/rm_casa/rm_casa.yy",},
     {"name":"inst_35557DB8","path":"rooms/rm_casa/rm_casa.yy",},
+    {"name":"inst_33796BA4","path":"rooms/rm_casa/rm_casa.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -36,6 +37,7 @@
         {"$GMRInstance":"v4","%Name":"inst_41CEACD9","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_41CEACD9","objectId":{"name":"oTransicao","path":"objects/oTransicao/oTransicao.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.46875,"scaleY":0.3515625,"x":57.5,"y":122.1875,},
         {"$GMRInstance":"v4","%Name":"inst_2C9DE94","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2C9DE94","objectId":{"name":"oParede","path":"objects/oParede/oParede.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.3665371,"scaleY":1.6484375,"x":300.0,"y":193.625,},
         {"$GMRInstance":"v4","%Name":"inst_399B8914","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_399B8914","objectId":{"name":"oParede","path":"objects/oParede/oParede.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":6.625,"scaleY":1.125,"x":120.0,"y":175.0,},
+        {"$GMRInstance":"v4","%Name":"inst_33796BA4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_33796BA4","objectId":{"name":"oControle","path":"objects/oControle/oControle.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":334.0,"y":0.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"sSala","path":"sprites/sSala/sSala.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
