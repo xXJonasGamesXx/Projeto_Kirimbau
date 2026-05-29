@@ -1,3 +1,3 @@
-sala= rm_casa
-oIarax = 286
-oIaray = 203
+sala= rm_salaCasa
+oIarax = 69
+oIaray = 132

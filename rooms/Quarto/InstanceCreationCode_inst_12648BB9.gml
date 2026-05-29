@@ -1,3 +1,3 @@
-sala = Floresta;
-oIarax = 10;
-oIaray = 95;
+sala = rm_floresta1;
+oIarax = 49;
+oIaray = 107;
