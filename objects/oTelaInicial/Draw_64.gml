@@ -1,25 +1,27 @@
 var gui_largura = display_get_gui_width();
 var gui_altura = display_get_gui_height();
-draw_sprite_stretched(sTelaInicial, 0, 0, 0, gui_largura, gui_altura);
+
+var x_meio = gui_largura / 2;
+var y_meio = gui_altura / 2;
+
+var inicio_x = x_meio - 375;
+var inicio_y = y_meio - 270;
+
+draw_sprite(sTelaInicial, 0, inicio_x, inicio_y);
 
 draw_set_font(fnt_telainicial);
-draw_set_colour(c_black);
 
-var dist = 55;
-var x1 = gui_largura/2;
-var y1 = gui_altura/2;
-
-for(var i = 0;i <op_max;i++){
+for(var i = 0; i < op_max; i++){
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_center);
 	
 	if(index == i){
-		draw_set_colour(c_blue);
-	}else{
 		draw_set_colour(c_white);
+	}else{
+		draw_set_colour(c_black);
 	}
 	
-	draw_text(x1, y1 + (30 * i), opcoes[i]);
+	draw_text(inicio_x + pos_x[i], inicio_y + pos_y[i], opcoes[i]);
 }
 
-draw_set_font(-1)
+draw_set_font(-1);

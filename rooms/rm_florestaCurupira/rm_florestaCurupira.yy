@@ -9,6 +9,7 @@
     {"name":"inst_1BA78378","path":"rooms/rm_florestaCurupira/rm_florestaCurupira.yy",},
     {"name":"inst_5DC397CE","path":"rooms/rm_florestaCurupira/rm_florestaCurupira.yy",},
     {"name":"inst_52F2F408","path":"rooms/rm_florestaCurupira/rm_florestaCurupira.yy",},
+    {"name":"inst_1FE40362","path":"rooms/rm_florestaCurupira/rm_florestaCurupira.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -16,6 +17,7 @@
         {"$GMRInstance":"v4","%Name":"inst_1BA78378","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1BA78378","objectId":{"name":"oCurupiraLouco","path":"objects/oCurupiraLouco/oCurupiraLouco.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":162.0,"y":68.0,},
         {"$GMRInstance":"v4","%Name":"inst_5DC397CE","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":true,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5DC397CE","objectId":{"name":"oTransicao","path":"objects/oTransicao/oTransicao.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.3125,"scaleY":1.3125,"x":0.0,"y":95.0,},
         {"$GMRInstance":"v4","%Name":"inst_52F2F408","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_52F2F408","objectId":{"name":"oTransicao","path":"objects/oTransicao/oTransicao.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.375,"scaleY":1.375,"x":310.0,"y":94.0,},
+        {"$GMRInstance":"v4","%Name":"inst_1FE40362","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1FE40362","objectId":{"name":"oControle","path":"objects/oControle/oControle.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":300.0,"y":0.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"sFlorestaVsCurupira","path":"sprites/sFlorestaVsCurupira/sFlorestaVsCurupira.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],

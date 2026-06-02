@@ -1,3 +1,3 @@
 sala = Quarto
 oIarax = 232
-oIaray = 172
+oIaray = 158

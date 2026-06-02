@@ -1,3 +1,3 @@
 sala = rm_floresta1;
-oIarax = 49;
-oIaray = 107;
+oIarax = 48;
+oIaray = 102;
