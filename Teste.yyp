@@ -33,6 +33,8 @@
   "resources":[
     {"id":{"name":"fnt_dialogo","path":"fonts/fnt_dialogo/fnt_dialogo.yy",},},
     {"id":{"name":"fnt_telainicial","path":"fonts/fnt_telainicial/fnt_telainicial.yy",},},
+    {"id":{"name":"Object12","path":"objects/Object12/Object12.yy",},},
+    {"id":{"name":"oCama","path":"objects/oCama/oCama.yy",},},
     {"id":{"name":"oControle","path":"objects/oControle/oControle.yy",},},
     {"id":{"name":"oCurupiraLouco","path":"objects/oCurupiraLouco/oCurupiraLouco.yy",},},
     {"id":{"name":"oDialogo","path":"objects/oDialogo/oDialogo.yy",},},
@@ -58,7 +60,9 @@
     {"id":{"name":"Iara_ParadaF","path":"sprites/Iara_ParadaF/Iara_ParadaF.yy",},},
     {"id":{"name":"Iara_ParadaL","path":"sprites/Iara_ParadaL/Iara_ParadaL.yy",},},
     {"id":{"name":"Iara_Subindo","path":"sprites/Iara_Subindo/Iara_Subindo.yy",},},
+    {"id":{"name":"sCama","path":"sprites/sCama/sCama.yy",},},
     {"id":{"name":"sCurupiraLouco","path":"sprites/sCurupiraLouco/sCurupiraLouco.yy",},},
+    {"id":{"name":"sDormindo","path":"sprites/sDormindo/sDormindo.yy",},},
     {"id":{"name":"sFloresta","path":"sprites/sFloresta/sFloresta.yy",},},
     {"id":{"name":"sfloresta2","path":"sprites/sfloresta2/sfloresta2.yy",},},
     {"id":{"name":"sFlorestaVsCurupira","path":"sprites/sFlorestaVsCurupira/sFlorestaVsCurupira.yy",},},

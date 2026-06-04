@@ -5,6 +5,10 @@ function scr_textos(){
 			ds_grid_add_text("Está muito cedo, eu e sua mãe estamos indo trabalhar", sIconPai, 1, "Pai");
 			ds_grid_add_text("Se comporte, senão a CUCA aparece...", sIconPai, 1, "Pai");
 		break;
+		
+		case "Cama":
+			ds_grid_add_text("Eu ainda preciso falar com o meu pai...", Iara_ParadaF, 1, "Iara");
+		break;
 	}
 }
 
