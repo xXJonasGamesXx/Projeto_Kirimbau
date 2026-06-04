@@ -12,3 +12,5 @@ inicializar = false;
 
 // Adicione apenas a variável de etiqueta vazia aqui!
 acao_final = "";
+
+global.curupira_evento_feito = false;
