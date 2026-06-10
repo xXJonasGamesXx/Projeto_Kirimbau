@@ -33,6 +33,8 @@
   "resources":[
     {"id":{"name":"fnt_dialogo","path":"fonts/fnt_dialogo/fnt_dialogo.yy",},},
     {"id":{"name":"fnt_telainicial","path":"fonts/fnt_telainicial/fnt_telainicial.yy",},},
+    {"id":{"name":"obj_controlador","path":"objects/obj_controlador/obj_controlador.yy",},},
+    {"id":{"name":"obj_transicaosair","path":"objects/obj_transicaosair/obj_transicaosair.yy",},},
     {"id":{"name":"Object12","path":"objects/Object12/Object12.yy",},},
     {"id":{"name":"oCama","path":"objects/oCama/oCama.yy",},},
     {"id":{"name":"oControle","path":"objects/oControle/oControle.yy",},},
@@ -46,6 +48,7 @@
     {"id":{"name":"oTelaInicial","path":"objects/oTelaInicial/oTelaInicial.yy",},},
     {"id":{"name":"oTransicao","path":"objects/oTransicao/oTransicao.yy",},},
     {"id":{"name":"Combate","path":"rooms/Combate/Combate.yy",},},
+    {"id":{"name":"loading","path":"rooms/loading/loading.yy",},},
     {"id":{"name":"Quarto","path":"rooms/Quarto/Quarto.yy",},},
     {"id":{"name":"rm_floresta1","path":"rooms/rm_floresta1/rm_floresta1.yy",},},
     {"id":{"name":"rm_floresta2","path":"rooms/rm_floresta2/rm_floresta2.yy",},},
@@ -70,6 +73,7 @@
     {"id":{"name":"sMae","path":"sprites/sMae/sMae.yy",},},
     {"id":{"name":"sPai","path":"sprites/sPai/sPai.yy",},},
     {"id":{"name":"sParede","path":"sprites/sParede/sParede.yy",},},
+    {"id":{"name":"sprtransicao","path":"sprites/sprtransicao/sprtransicao.yy",},},
     {"id":{"name":"sQuarto","path":"sprites/sQuarto/sQuarto.yy",},},
     {"id":{"name":"sQuintal","path":"sprites/sQuintal/sQuintal.yy",},},
     {"id":{"name":"sSaciLouco","path":"sprites/sSaciLouco/sSaciLouco.yy",},},
@@ -88,6 +92,7 @@
     {"roomId":{"name":"rm_floresta1","path":"rooms/rm_floresta1/rm_floresta1.yy",},},
     {"roomId":{"name":"rm_florestaCurupira","path":"rooms/rm_florestaCurupira/rm_florestaCurupira.yy",},},
     {"roomId":{"name":"Combate","path":"rooms/Combate/Combate.yy",},},
+    {"roomId":{"name":"loading","path":"rooms/loading/loading.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
