@@ -1,7 +1,7 @@
 if (keyboard_check_pressed(vk_space) && !instance_exists(obj_controlador)) {
-	var _targetRoom = Tela_Inicial;
+	var _targetRoom = Quarto;
 	
-	if (room == Tela_Inicial ) _targetRoom = Quarto;
+	if (room == Quarto ) _targetRoom = Tela_Inicial;
 	
-	fadeToRoom(_targetRoom, 60, c_black);
+	fadeToRoom(_targetRoom, 120, c_black);
 }
