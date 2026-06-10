@@ -48,7 +48,6 @@
     {"id":{"name":"oTelaInicial","path":"objects/oTelaInicial/oTelaInicial.yy",},},
     {"id":{"name":"oTransicao","path":"objects/oTransicao/oTransicao.yy",},},
     {"id":{"name":"Combate","path":"rooms/Combate/Combate.yy",},},
-    {"id":{"name":"loading","path":"rooms/loading/loading.yy",},},
     {"id":{"name":"Quarto","path":"rooms/Quarto/Quarto.yy",},},
     {"id":{"name":"rm_floresta1","path":"rooms/rm_floresta1/rm_floresta1.yy",},},
     {"id":{"name":"rm_floresta2","path":"rooms/rm_floresta2/rm_floresta2.yy",},},
@@ -74,7 +73,6 @@
     {"id":{"name":"sMae","path":"sprites/sMae/sMae.yy",},},
     {"id":{"name":"sPai","path":"sprites/sPai/sPai.yy",},},
     {"id":{"name":"sParede","path":"sprites/sParede/sParede.yy",},},
-    {"id":{"name":"sprtransicao","path":"sprites/sprtransicao/sprtransicao.yy",},},
     {"id":{"name":"sQuarto","path":"sprites/sQuarto/sQuarto.yy",},},
     {"id":{"name":"sQuintal","path":"sprites/sQuintal/sQuintal.yy",},},
     {"id":{"name":"sSaciLouco","path":"sprites/sSaciLouco/sSaciLouco.yy",},},
@@ -93,7 +91,6 @@
     {"roomId":{"name":"rm_floresta1","path":"rooms/rm_floresta1/rm_floresta1.yy",},},
     {"roomId":{"name":"rm_florestaCurupira","path":"rooms/rm_florestaCurupira/rm_florestaCurupira.yy",},},
     {"roomId":{"name":"Combate","path":"rooms/Combate/Combate.yy",},},
-    {"roomId":{"name":"loading","path":"rooms/loading/loading.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
