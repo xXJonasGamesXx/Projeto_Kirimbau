@@ -1,3 +1,9 @@
+/// @arg room
+/// @arg duration 
+/// @arg color
+
+
+
 var _room = argument[0];
 var _dur = argument[1];
 var _color = argument[2];
