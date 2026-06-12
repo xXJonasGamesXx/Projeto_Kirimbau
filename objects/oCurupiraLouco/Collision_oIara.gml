@@ -1,0 +1,1 @@
+NewEncounter([global.enemies.Curupira], sBatalha);

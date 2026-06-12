@@ -1,0 +1,1 @@
+draw_sprite(sBatalha,0,x,y);

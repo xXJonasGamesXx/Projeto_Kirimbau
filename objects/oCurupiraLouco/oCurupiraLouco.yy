@@ -1,7 +1,9 @@
 {
   "$GMObject":"",
   "%Name":"oCurupiraLouco",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"oIara","path":"objects/oIara/oIara.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"oCurupiraLouco",
   "overriddenProperties":[],
