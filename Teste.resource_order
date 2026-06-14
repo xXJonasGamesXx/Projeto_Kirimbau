@@ -10,6 +10,9 @@
   "ResourceOrderSettings":[
     {"name":"fnt_telainicial","order":1,"path":"fonts/fnt_telainicial/fnt_telainicial.yy",},
     {"name":"oBattle","order":10,"path":"objects/oBattle/oBattle.yy",},
+    {"name":"oBattleUnit","order":11,"path":"objects/oBattleUnit/oBattleUnit.yy",},
+    {"name":"oBattleUnitEnemy","order":13,"path":"objects/oBattleUnitEnemy/oBattleUnitEnemy.yy",},
+    {"name":"oBattleUnitPc","order":12,"path":"objects/oBattleUnitPc/oBattleUnitPc.yy",},
     {"name":"obj_checkpoint","order":9,"path":"objects/obj_checkpoint/obj_checkpoint.yy",},
     {"name":"oCama","order":5,"path":"objects/oCama/oCama.yy",},
     {"name":"oControle","order":4,"path":"objects/oControle/oControle.yy",},
@@ -37,6 +40,7 @@
     {"name":"Iara_ParadaL","order":4,"path":"sprites/Iara_ParadaL/Iara_ParadaL.yy",},
     {"name":"Iara_Subindo","order":5,"path":"sprites/Iara_Subindo/Iara_Subindo.yy",},
     {"name":"sBatalha","order":7,"path":"sprites/sBatalha/sBatalha.yy",},
+    {"name":"sBox","order":24,"path":"sprites/sBox/sBox.yy",},
     {"name":"sCama","order":10,"path":"sprites/sCama/sCama.yy",},
     {"name":"sCurupiraLouco","order":6,"path":"sprites/sCurupiraLouco/sCurupiraLouco.yy",},
     {"name":"sDormindo","order":11,"path":"sprites/sDormindo/sDormindo.yy",},

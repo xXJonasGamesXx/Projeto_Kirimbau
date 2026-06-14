@@ -13,8 +13,8 @@ global.party=
 	];
 	
 global.enemies=
-	[
-		{
+	{
+		Curupira: {
 			name: "Curupira",
 			hp: 150,
 			hpMax: 150,
@@ -26,4 +26,4 @@ global.enemies=
 			AIscript : function()
 			{}
 		}
-	]
+	}

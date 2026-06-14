@@ -1,15 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"oCurupiraLouco",
+  "%Name":"oBattleUnit",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"oIara","path":"objects/oIara/oIara.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oCurupiraLouco",
+  "name":"oBattleUnit",
   "overriddenProperties":[],
   "parent":{
-    "name":"Personagens",
-    "path":"folders/Objetos/Personagens.yy",
+    "name":"Objetos",
+    "path":"folders/Objetos.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -29,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sCurupiraLouco",
-    "path":"sprites/sCurupiraLouco/sCurupiraLouco.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
