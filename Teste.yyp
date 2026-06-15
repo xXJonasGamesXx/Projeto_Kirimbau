@@ -20,7 +20,9 @@
     {"$GMFolder":"","%Name":"Icons","folderPath":"folders/Sprites/Icons.yy","name":"Icons","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Personagens","folderPath":"folders/Sprites/Personagens.yy","name":"Personagens","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
-  "ForcedPrefabProjectReferences":[],
+  "ForcedPrefabProjectReferences":[
+    {"link":"io.gamemaker.sdfshaders-1.0.0","name":"io.gamemaker.sdfshaders-1.0.0","path":"io.gamemaker.sdfshaders-1.0.0.yyp",},
+  ],
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"m5x7.ttf","CopyToMask":-1,"filePath":"datafiles","name":"m5x7.ttf","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
   ],
@@ -31,9 +33,11 @@
   },
   "name":"Teste",
   "resources":[
+    {"id":{"name":"fnt_batalha","path":"fonts/fnt_batalha/fnt_batalha.yy",},},
     {"id":{"name":"fnt_dialogo","path":"fonts/fnt_dialogo/fnt_dialogo.yy",},},
     {"id":{"name":"fnt_telainicial","path":"fonts/fnt_telainicial/fnt_telainicial.yy",},},
     {"id":{"name":"oBattle","path":"objects/oBattle/oBattle.yy",},},
+    {"id":{"name":"oBattleEffect","path":"objects/oBattleEffect/oBattleEffect.yy",},},
     {"id":{"name":"oBattleUnit","path":"objects/oBattleUnit/oBattleUnit.yy",},},
     {"id":{"name":"oBattleUnitEnemy","path":"objects/oBattleUnitEnemy/oBattleUnitEnemy.yy",},},
     {"id":{"name":"oBattleUnitPc","path":"objects/oBattleUnitPc/oBattleUnitPc.yy",},},
