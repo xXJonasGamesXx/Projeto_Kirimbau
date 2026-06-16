@@ -14,7 +14,7 @@ global.actionLibrary =
         func : function(_user, _targets)
         {
             var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
-            with (_targets[0]) hp = max(0, hp - _damage);
+			BattleChangeHP(_targets[0], -_damage, 0);
         }
     }
 }
@@ -32,7 +32,7 @@ global.party=
 			name: "Iara",
 			hp: 100,
 			hpMax: 100,
-			strenght: 6,
+			strength: 6,
 			sprites: {idle: Iara_ParadaL, attack: Iara_ParadaL , defend: Iara_ParadaL , down: Iara_ParadaL },
 			actions : []
 		}
@@ -44,7 +44,7 @@ global.enemies=
 			name: "Curupira",
 			hp: 150,
 			hpMax: 150,
-			strenght: 10,
+			strength: 10,
 			sprites: {idle: sCurupiraLouco, attack: sCurupiraLouco },
 			actions : [],
 			AIscript : function()

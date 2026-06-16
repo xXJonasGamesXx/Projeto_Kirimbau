@@ -38,6 +38,7 @@
     {"id":{"name":"fnt_telainicial","path":"fonts/fnt_telainicial/fnt_telainicial.yy",},},
     {"id":{"name":"oBattle","path":"objects/oBattle/oBattle.yy",},},
     {"id":{"name":"oBattleEffect","path":"objects/oBattleEffect/oBattleEffect.yy",},},
+    {"id":{"name":"oBattleFloatingText","path":"objects/oBattleFloatingText/oBattleFloatingText.yy",},},
     {"id":{"name":"oBattleUnit","path":"objects/oBattleUnit/oBattleUnit.yy",},},
     {"id":{"name":"oBattleUnitEnemy","path":"objects/oBattleUnitEnemy/oBattleUnitEnemy.yy",},},
     {"id":{"name":"oBattleUnitPc","path":"objects/oBattleUnitPc/oBattleUnitPc.yy",},},

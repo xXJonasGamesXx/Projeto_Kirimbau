@@ -12,6 +12,7 @@
     {"name":"fnt_telainicial","order":1,"path":"fonts/fnt_telainicial/fnt_telainicial.yy",},
     {"name":"oBattle","order":10,"path":"objects/oBattle/oBattle.yy",},
     {"name":"oBattleEffect","order":14,"path":"objects/oBattleEffect/oBattleEffect.yy",},
+    {"name":"oBattleFloatingText","order":15,"path":"objects/oBattleFloatingText/oBattleFloatingText.yy",},
     {"name":"oBattleUnit","order":11,"path":"objects/oBattleUnit/oBattleUnit.yy",},
     {"name":"oBattleUnitEnemy","order":13,"path":"objects/oBattleUnitEnemy/oBattleUnitEnemy.yy",},
     {"name":"oBattleUnitPc","order":12,"path":"objects/oBattleUnitPc/oBattleUnitPc.yy",},
