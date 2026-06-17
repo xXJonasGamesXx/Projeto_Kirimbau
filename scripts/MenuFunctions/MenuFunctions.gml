@@ -63,7 +63,13 @@ function MenuGoBack()
 
 function MenuSelectAction(_user, _action)
 {
-	with (oMenu) active = false;
-	with (oBattle) BeginAction(_user, _action, _user);
-	with (oMenu) instance_destroy();
+    with (oMenu) active = false;
+    
+    // Pega o primeiro monstro vivo para ser o alvo
+    var _target = oBattle.enemyUnits[0]; // Ou apenas enemyUnits[0] dependendo de como você chamou a array no oBattle
+    
+    // Passa o alvo pro ataque em vez do _user!
+    with (oBattle) BeginAction(_user, _action, _target); 
+    
+    with (oMenu) instance_destroy();
 }

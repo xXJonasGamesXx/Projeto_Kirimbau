@@ -115,7 +115,7 @@ function BeginAction(_user, _action, _targets)
     currentUser = _user;
     currentAction = _action;
     currentTargets = _targets;
-	baattleText = string_ext(_action.description, [_user.name])
+	battleText = string_ext(_action.description, [_user.name])
     if (!is_array(currentTargets)) currentTargets = [currentTargets];
     battleWaitTimeRemaining = battleWaitTimeFrames;
     with (_user)
