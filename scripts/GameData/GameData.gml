@@ -34,7 +34,7 @@ global.party=
 			hpMax: 100,
 			strength: 6,
 			sprites: {idle: Iara_ParadaL, attack: Iara_ParadaL , defend: Iara_ParadaL , down: Iara_ParadaL },
-			actions : []
+			actions : [global.actionLibrary.attack]
 		}
 	];
 	
