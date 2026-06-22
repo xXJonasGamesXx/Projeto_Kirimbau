@@ -180,6 +180,65 @@ function BattleStatePerformAction()
 
 function BattleStateVictoryCheck()
 {
+    // 1. Checar se a Iara (ou a party) morreu
+    var _partyDead = true;
+    for (var i = 0; i < array_length(partyUnits); i++) {
+        if (partyUnits[i].hp > 0) _partyDead = false; // Tem alguém vivo!
+    }
+    
+    if (_partyDead) {
+        // --- CONDIÇÃO DE DERROTA ---
+        // Quando tiver save, você altera isso para carregar o save.
+        // Por enquanto, vamos reiniciar o jogo (ou voltar pra tela inicial)
+        game_restart(); 
+        return; // O return impede que o resto do código rode
+    }
+    
+    // 2. Checar se os inimigos morreram
+    var _enemiesDead = true;
+    // IMPORTANTE: Confirme se a sua array de inimigos se chama enemyUnits mesmo!
+    for (var i = 0; i < array_length(enemyUnits); i++) {
+        if (enemyUnits[i].hp > 0) _enemiesDead = false; 
+    }
+    
+    if (_enemiesDead) {
+        // --- CONDIÇÃO DE VITÓRIA ---
+        // Reativa o mapa do jogo (cenário anterior)
+        instance_activate_all();
+        
+        // Substitui o monstro no mapa pela sua versão de Lore
+       // Substitui o monstro no mapa pela sua versão de Lore
+        if (creator != noone && instance_exists(creator)) {
+            with (creator) {
+                
+                // Checa qual era o monstro que iniciou a batalha
+                switch (object_index) {
+                    case oCurupiraLouco:
+                        instance_create_depth(x, y, depth, oCurupiraDerrotado);
+                        break;
+                        
+                    case oSaciLouco: // Coloque aqui o nome exato do inimigo Saci no mapa
+                        instance_create_depth(x, y, depth, oSaciDerrotado);
+                        break;
+                        
+                    case oCuca: // Coloque aqui o nome exato da inimiga Cuca no mapa
+                        instance_create_depth(x, y, depth, oCucaDerrotada);
+                        break;
+                }
+                
+                // Destrói o monstro agressivo do mapa
+                instance_destroy(); 
+            }
+        }
+        
+        // Destrói os objetos gráficos da batalha para limpar a tela
+        with (oBattleUnitPc) instance_destroy();
+        with (oBattleUnitEnemy) instance_destroy();
+        instance_destroy(); // Destrói o próprio oBattle
+        return;
+    }
+    
+    // 3. Se ninguém morreu de ambos os lados, o jogo continua!
     battleState = BattleStateTurnProgression;
 }
 

@@ -2,8 +2,8 @@ global.actionLibrary =
 {
     attack : 
     {
-        name : "Attack",
-        description : "{0} attacks!",
+        name : "Ataque",
+        description : "{0} ataca!",
         subMenu : -1,
         targetRequired : true,
         targetEnemyByDefault : true,
@@ -14,10 +14,60 @@ global.actionLibrary =
         func : function(_user, _targets)
         {
             var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
-			BattleChangeHP(_targets[0], -_damage, 0);
+            
+           
+            if (variable_instance_exists(_targets[0], "isDefending") && _targets[0].isDefending == true) 
+            {
+                _damage = ceil(_damage / 4); 
+            }
+
+            BattleChangeHP(_targets[0], -_damage, 0);
+        }
+    }, 
+
+    defend : 
+    {
+        name : "Defender",
+        description : "{0} fica em posição de defesa!",
+        subMenu : -1,
+        targetRequired : false, 
+        targetEnemyByDefault : false,
+        targetAll : MODE.NEVER,
+        userAnimation : "defend", 
+        effectSprite : -1, 
+        effectOnTarget : MODE.NEVER,
+        func : function(_user, _targets)
+        {
+            _user.isDefending = true; 
+        }
+    },
+	
+	prender : 
+    {
+        name : "Prender",
+        description : "{0} tenta prender!",
+        subMenu : -1,
+        targetRequired : true,
+        targetEnemyByDefault : true,
+        targetAll : MODE.NEVER,
+        userAnimation : "prender",
+        effectSprite : sCurupiraLouco,
+        effectOnTarget : MODE.ALWAYS,
+        func : function(_user, _targets)
+        {
+            var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+            
+           
+            if (variable_instance_exists(_targets[0], "isDefending") && _targets[0].isDefending == true) 
+            {
+                _damage = ceil(_damage / 2); 
+            }
+
+            BattleChangeHP(_targets[0], -_damage, 0);
         }
     }
-}
+	
+} 
 
 enum MODE
 {
@@ -33,8 +83,8 @@ global.party=
 			hp: 100,
 			hpMax: 100,
 			strength: 6,
-			sprites: {idle: Iara_ParadaL, attack: Iara_ParadaL , defend: Iara_ParadaL , down: Iara_ParadaL },
-			actions : [global.actionLibrary.attack]
+			sprites: {idle: Iara_ParadaL, prender: Iara_ParadaL , defend: Iara_ParadaL , down: Iara_ParadaL },
+			actions : [global.actionLibrary.prender, global.actionLibrary.defend]
 		}
 	];
 	

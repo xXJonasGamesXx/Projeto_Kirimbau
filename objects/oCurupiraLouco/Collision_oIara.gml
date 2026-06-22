@@ -1,1 +1,1 @@
-NewEncounter([global.enemies.Curupira], sBatalha);
+NewEncounter([global.enemies.Curupira], sBatalha, id);
