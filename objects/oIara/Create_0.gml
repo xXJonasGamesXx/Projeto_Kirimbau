@@ -9,3 +9,4 @@ if (global.check_y != 0)
 x = global.check_x;
 y = global.check_y;
 }
+

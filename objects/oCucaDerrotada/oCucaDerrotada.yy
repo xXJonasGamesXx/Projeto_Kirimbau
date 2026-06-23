@@ -27,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sCucaDerrotada",
+    "path":"sprites/sCucaDerrotada/sCucaDerrotada.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

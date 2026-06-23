@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"oCuca",
+  "%Name":"oCucaLouca",
   "eventList":[],
   "managed":true,
-  "name":"oCuca",
+  "name":"oCucaLouca",
   "overriddenProperties":[],
   "parent":{
     "name":"Personagens",
@@ -27,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sCucaLouca",
+    "path":"sprites/sCucaLouca/sCucaLouca.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

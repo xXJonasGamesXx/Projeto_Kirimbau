@@ -1,0 +1,1 @@
+opcao_selecionada = 0; 

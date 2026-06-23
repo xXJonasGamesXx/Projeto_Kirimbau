@@ -42,21 +42,17 @@ function BattleStateSelectAction()
 {
 	if(!instance_exists(oMenu))
 	{
-	    //Get current unit
 	    var _unit = unitTurnOrder[turn];
 
-	    //is the unit dead or unable to act?
 	    if (!instance_exists(_unit)) || (_unit.hp <= 0)
 	    {
 	        battleState = BattleStateVictoryCheck;
 	        exit;
 	    }
 
-	    //Select an action to perform
 	    if (_unit.object_index == oBattleUnitPc)
 		{
 		
-		//compile the action menu
 		var _menuOptions = [];
 		var _subMenus = {};
 
@@ -65,15 +61,14 @@ function BattleStateSelectAction()
 		for (var i = 0; i < array_length(_actionList); i++)
 		{
 			var _action = _actionList[i];
-			var _available = true; // later we'll check mp cost here..
-			var _nameAndCount = _action.name; //later we'll modify the name to include the item count, if the action is an item.
+			var _available = true; 
+			var _nameAndCount = _action.name; 
 			if (_action.subMenu == -1)
 			{
 				array_push(_menuOptions, [_nameAndCount, MenuSelectAction, [_unit, _action], _available]);
 			}
 			else
 			{
-				//create or add to a submenu
 				if (is_undefined(_subMenus[$ _action.subMenu]))
 				{
 					variable_struct_set(_subMenus, _action.subMenu, [[_nameAndCount, MenuSelectAction, [_unit, _action], _available]]);
@@ -85,16 +80,11 @@ function BattleStateSelectAction()
 			}
 		}
 		
-		//turn sub menus into an array
 		var _subMenusArray = variable_struct_get_names(_subMenus);
 		for (var i = 0; i < array_length(_subMenusArray); i++)
 		{
-			//sort submenu if needed
-			//(here)
 	
-			//add back option at the end of each submenu
 			array_push(_subMenus[$ _subMenusArray[i]], ["Back", MenuGoBack, -1, true]);
-			//add submenu into main menu
 			array_push(_menuOptions, [_subMenusArray[i], SubMenu, [_subMenus[$ _subMenusArray[i]]], true]);
 		}
 
@@ -103,7 +93,6 @@ function BattleStateSelectAction()
 		}
 		else
 		{
-		//if unit is AI controlled:
 			var _enemyAction = _unit.AIscript();
 			if (_enemyAction != -1) BeginAction(_unit.id, _enemyAction[0], _enemyAction[1]);
 		}
@@ -121,7 +110,6 @@ function BeginAction(_user, _action, _targets)
     with (_user)
     {
         acting = true;
-        //play user animation if it is defined for that action, and that user
         if (!is_undefined(_action[$ "userAnimation"])) && (!is_undefined(_user.sprites[$ _action.userAnimation]))
         {
             sprite_index = sprites[$ _action.userAnimation];
@@ -133,10 +121,8 @@ function BeginAction(_user, _action, _targets)
 
 function BattleStatePerformAction()
 {
-    //if animation etc is still playing
     if (currentUser.acting)
     {
-        //when it ends, perform action effect if it exists
         if (currentUser.image_index >= currentUser.image_number -1)
         {
             with (currentUser)
@@ -165,7 +151,7 @@ function BattleStatePerformAction()
             currentAction.func(currentUser, currentTargets);
         }
     }
-    else //wait for delay and then end the turn
+    else 
     {
         if (!instance_exists(oBattleEffect))
         {
@@ -180,65 +166,52 @@ function BattleStatePerformAction()
 
 function BattleStateVictoryCheck()
 {
-    // 1. Checar se a Iara (ou a party) morreu
     var _partyDead = true;
     for (var i = 0; i < array_length(partyUnits); i++) {
-        if (partyUnits[i].hp > 0) _partyDead = false; // Tem alguém vivo!
+        if (partyUnits[i].hp > 0) _partyDead = false; 
     }
     
     if (_partyDead) {
-        // --- CONDIÇÃO DE DERROTA ---
-        // Quando tiver save, você altera isso para carregar o save.
-        // Por enquanto, vamos reiniciar o jogo (ou voltar pra tela inicial)
-        game_restart(); 
-        return; // O return impede que o resto do código rode
-    }
+        instance_activate_all(); 
+        room_goto(rm_gameover); 
+        return; 
+    } // Aqui fecha apenas o 'if (_partyDead)'!
     
-    // 2. Checar se os inimigos morreram
     var _enemiesDead = true;
-    // IMPORTANTE: Confirme se a sua array de inimigos se chama enemyUnits mesmo!
     for (var i = 0; i < array_length(enemyUnits); i++) {
         if (enemyUnits[i].hp > 0) _enemiesDead = false; 
     }
     
     if (_enemiesDead) {
-        // --- CONDIÇÃO DE VITÓRIA ---
-        // Reativa o mapa do jogo (cenário anterior)
         instance_activate_all();
         
-        // Substitui o monstro no mapa pela sua versão de Lore
-       // Substitui o monstro no mapa pela sua versão de Lore
         if (creator != noone && instance_exists(creator)) {
             with (creator) {
                 
-                // Checa qual era o monstro que iniciou a batalha
                 switch (object_index) {
                     case oCurupiraLouco:
                         instance_create_depth(x, y, depth, oCurupiraDerrotado);
                         break;
                         
-                    case oSaciLouco: // Coloque aqui o nome exato do inimigo Saci no mapa
+                    case oSaciLouco:
                         instance_create_depth(x, y, depth, oSaciDerrotado);
                         break;
                         
-                    case oCuca: // Coloque aqui o nome exato da inimiga Cuca no mapa
+                    case oCucaLouca: 
                         instance_create_depth(x, y, depth, oCucaDerrotada);
                         break;
                 }
                 
-                // Destrói o monstro agressivo do mapa
                 instance_destroy(); 
             }
         }
         
-        // Destrói os objetos gráficos da batalha para limpar a tela
         with (oBattleUnitPc) instance_destroy();
         with (oBattleUnitEnemy) instance_destroy();
-        instance_destroy(); // Destrói o próprio oBattle
+        instance_destroy(); 
         return;
     }
     
-    // 3. Se ninguém morreu de ambos os lados, o jogo continua!
     battleState = BattleStateTurnProgression;
 }
 
@@ -247,7 +220,6 @@ function BattleStateTurnProgression()
 	battleText = "";
     turnCount++;
     turn++;
-    //Loop turns
     if (turn > array_length(unitTurnOrder) - 1)
     {
         turn = 0;
