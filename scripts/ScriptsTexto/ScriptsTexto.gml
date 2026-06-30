@@ -7,7 +7,34 @@ function scr_textos(){
 		break;
 		
 		case "Cama":
-			ds_grid_add_text("Eu ainda preciso falar com o meu pai...", Iara_ParadaF, 1, "Iara");
+			ds_grid_add_text("Eu ainda preciso falar com o meu pai...", Iara_ParadaF, 0, "Iara");
+		break;
+		
+		case "SaciLouco":
+			ds_grid_add_text("Achou que ia passar batido, menina?!", sSaciLouco, 1, "Saci"); 
+		break;
+		
+		case "SaciDerrotado":
+			ds_grid_add_text("Me desculpe menina, não quis te machucar!", sSaciDerrotado, 1, "Saci");
+			ds_grid_add_text("Eu gosto de fazer travessuras, mas não machucar...", sSaciDerrotado, 1, "Saci");
+			ds_grid_add_text("Obrigado por me libertar...", sSaciDerrotado, 1, "Saci");
+			ds_grid_add_text("O que aconteceu com você???", Iara_ParadaF, 0, "Iara");
+			ds_grid_add_text("Eu tava em algum tipo de transe, não sei dizer ao certo", sSaciDerrotado, 1, "Saci");
+			ds_grid_add_text("Provavelmente não sou só eu que estou assim, pegue esse cipó, ele podera te ajudar", sSaciDerrotado, 1, "Saci");
+		break;
+		
+		case "CurupiraLouco":
+			ds_grid_add_text("A sua presença amaeça a floresta", sCurupiraLouco, 1, "Curupira");
+			ds_grid_add_text("Não posso deixar você passar!", sCurupiraLouco, 1, "Curupira");
+		break;
+		
+		case "CurupiraDerrotado":
+			ds_grid_add_text("Me desculpe garota", sCurupiraDerrotado, 1, "Curupira");
+			ds_grid_add_text("No final das contas era eu que estava machucando a floresta...", sCurupiraDerrotado, 1, "Curupira");
+			ds_grid_add_text("O que esta acontecendo com vocês, o Saci também estava assim!", Iara_ParadaF, 0, "Iara");
+			ds_grid_add_text("Eu não sei, mas sinto que a Cuca tem algo haver com isso", sCurupiraDerrotado, 1, "Curupira");
+			ds_grid_add_text("Eu vou atras dela! Não da mais.", Iara_ParadaF, 0, "Iara");
+			ds_grid_add_text("Boa sorte garota, e cuidado!!", sCurupiraDerrotado, 1, "Curupira");
 		break;
 	}
 }

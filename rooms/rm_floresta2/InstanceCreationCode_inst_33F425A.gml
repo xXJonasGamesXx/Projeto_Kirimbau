@@ -1,3 +1,3 @@
-sala = rm_florestaCurupira;
-oIarax = 6;
-oIaray = 107;
+sala = rm_saci;
+oIarax = 10;
+oIaray = 100;

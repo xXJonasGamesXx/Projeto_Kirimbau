@@ -182,34 +182,32 @@ function BattleStateVictoryCheck()
         if (enemyUnits[i].hp > 0) _enemiesDead = false; 
     }
     
-    if (_enemiesDead) {
+   if (_enemiesDead) {
         instance_activate_all();
         
+        // 1. Troca o Monstro no mapa
         if (creator != noone && instance_exists(creator)) {
             with (creator) {
-                
+                var _novoObj = noone;
                 switch (object_index) {
-                    case oCurupiraLouco:
-                        instance_create_depth(x, y, depth, oCurupiraDerrotado);
-                        break;
-                        
-                    case oSaciLouco:
-                        instance_create_depth(x, y, depth, oSaciDerrotado);
-                        break;
-                        
-                    case oCucaLouca: 
-                        instance_create_depth(x, y, depth, oCucaDerrotada);
-                        break;
+                    case oCurupiraLouco: _novoObj = oCurupiraDerrotado; break;
+                    case oSaciLouco:     _novoObj = oSaciDerrotado;     break;
+                    case oCucaLouca:     _novoObj = oCucaDerrotada;     break;
                 }
-                
+                if (_novoObj != noone) {
+                    instance_create_layer(x, y, "Instances", _novoObj);
+                }
                 instance_destroy(); 
             }
         }
         
+        pos_vitoria = true; 
+        
         with (oBattleUnitPc) instance_destroy();
         with (oBattleUnitEnemy) instance_destroy();
+        
         instance_destroy(); 
-        return;
+        return; 
     }
     
     battleState = BattleStateTurnProgression;
@@ -229,4 +227,10 @@ function BattleStateTurnProgression()
 }
 
 battleState = BattleStateSelectAction;
+
+
+
+if (layer_exists("Tiles_1")) {
+    layer_set_visible("Tiles_1", false);
+}
 

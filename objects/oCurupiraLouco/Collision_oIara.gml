@@ -1,1 +1,0 @@
-NewEncounter([global.enemies.Curupira], sBatalha, id);

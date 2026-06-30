@@ -9,7 +9,10 @@
     "name":"Personagens",
     "path":"folders/Objetos/Personagens.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"oParNPC",
+    "path":"objects/oParNPC/oParNPC.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

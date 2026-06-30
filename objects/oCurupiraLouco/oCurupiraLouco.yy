@@ -2,7 +2,7 @@
   "$GMObject":"",
   "%Name":"oCurupiraLouco",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"oIara","path":"objects/oIara/oIara.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"oCurupiraLouco",
@@ -11,7 +11,10 @@
     "name":"Personagens",
     "path":"folders/Objetos/Personagens.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"oParNPC",
+    "path":"objects/oParNPC/oParNPC.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

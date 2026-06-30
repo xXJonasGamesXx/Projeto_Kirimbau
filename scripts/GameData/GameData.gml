@@ -107,5 +107,44 @@ global.enemies=
 				var _target = _possibleTargets[irandom(array_length(_possibleTargets)-1)];
 				return [_action, _target];
 			}
+		},
+		
+		 Saci: {
+			name: "Saci",
+			hp: 150,
+			hpMax: 150,
+			strength: 10,
+			sprites: {idle: sSaciLouco, attack: sSaciLouco },
+			actions : [global.actionLibrary.attack],
+			AIscript : function()
+			{
+				var _action = actions[0];
+				var _possibleTargets = array_filter(oBattle.partyUnits, function(_unit, _index)
+				{
+					return (_unit.hp > 0);
+				});
+				var _target = _possibleTargets[irandom(array_length(_possibleTargets)-1)];
+				return [_action, _target];
+			}
+		},
+		
+		Cuca: {
+			name: "Cuca",
+			hp: 150,
+			hpMax: 150,
+			strength: 10,
+			sprites: {idle: sCucaLouca, attack: sCucaLouca },
+			actions : [global.actionLibrary.attack],
+			AIscript : function()
+			{
+				var _action = actions[0];
+				var _possibleTargets = array_filter(oBattle.partyUnits, function(_unit, _index)
+				{
+					return (_unit.hp > 0);
+				});
+				var _target = _possibleTargets[irandom(array_length(_possibleTargets)-1)];
+				return [_action, _target];
+			}
 		}
+		
 	}
