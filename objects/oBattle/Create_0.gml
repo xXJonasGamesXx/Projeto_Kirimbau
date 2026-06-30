@@ -141,7 +141,7 @@ function BattleStatePerformAction()
                         instance_create_depth(currentTargets[i].x, currentTargets[i].y, currentTargets[i].depth-1, oBattleEffect, {sprite_index : currentAction.effectSprite});
                     }
                 }
-                else //play it at 0,0
+                else 
                 {
                     var _effectSprite = currentAction.effectSprite
                     if (variable_struct_exists(currentAction, "effectSpriteNoTarget")) _effectSprite = currentAction.effectSpriteNoTarget;
@@ -175,7 +175,7 @@ function BattleStateVictoryCheck()
         instance_activate_all(); 
         room_goto(rm_gameover); 
         return; 
-    } // Aqui fecha apenas o 'if (_partyDead)'!
+    } 
     
     var _enemiesDead = true;
     for (var i = 0; i < array_length(enemyUnits); i++) {
@@ -185,28 +185,44 @@ function BattleStateVictoryCheck()
    if (_enemiesDead) {
         instance_activate_all();
         
-        // 1. Troca o Monstro no mapa
         if (creator != noone && instance_exists(creator)) {
             with (creator) {
                 var _novoObj = noone;
-                switch (object_index) {
-                    case oCurupiraLouco: _novoObj = oCurupiraDerrotado; break;
-                    case oSaciLouco:     _novoObj = oSaciDerrotado;     break;
-                    case oCucaLouca:     _novoObj = oCucaDerrotada;     break;
+                var _nomeNpc = ""; 
+                
+               switch (object_index) {
+                    case oCurupiraLouco: 
+                        _novoObj = oCurupiraDerrotado; 
+                        _nomeNpc = "CurupiraDerrotado";
+                        global.curupira_derrotado = true; 
+                        break;
+                    case oSaciLouco:     
+                        _novoObj = oSaciDerrotado;     
+                        _nomeNpc = "SaciDerrotado"; 
+                        global.saci_derrotado = true; 
+                        break;
+                    case oCucaLouca:     
+                        _novoObj = oCucaDerrotada;     
+                        _nomeNpc = "CucaDerrotada"; 
+                        global.cuca_derrotada = true; 
+                        break;
                 }
+                
                 if (_novoObj != noone) {
-                    instance_create_layer(x, y, "Instances", _novoObj);
+                    var _inst = instance_create_layer(x, y, "Instances", _novoObj);
+                    _inst.npc_nome = _nomeNpc; 
+                    
+                    var _dialogo = instance_create_depth(x, y, -9999, oDialogo);
+                    _dialogo.npc_nome = _nomeNpc; 
                 }
                 instance_destroy(); 
             }
         }
         
-        pos_vitoria = true; 
-        
         with (oBattleUnitPc) instance_destroy();
         with (oBattleUnitEnemy) instance_destroy();
-        
         instance_destroy(); 
+        
         return; 
     }
     
