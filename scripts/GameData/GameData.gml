@@ -92,8 +92,8 @@ global.enemies=
 	{
 		Curupira: {
 			name: "Curupira",
-			hp: 150,
-			hpMax: 150,
+			hp: 100,
+			hpMax: 100,
 			strength: 10,
 			sprites: {idle: sCurupiraLouco, attack: sCurupiraLouco },
 			actions : [global.actionLibrary.attack],
@@ -111,8 +111,8 @@ global.enemies=
 		
 		 Saci: {
 			name: "Saci",
-			hp: 150,
-			hpMax: 150,
+			hp: 100,
+			hpMax: 100,
 			strength: 10,
 			sprites: {idle: sSaciLouco, attack: sSaciLouco },
 			actions : [global.actionLibrary.attack],

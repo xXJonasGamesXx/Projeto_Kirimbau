@@ -36,14 +36,18 @@ else
 
 
 if distance_to_object(oParNPC) <= 10 {
-	if keyboard_check_pressed(ord("E")) and global.dialogo == false {
-		var _npc = instance_nearest(x, y, oParNPC);
-		
-		if (variable_instance_exists(_npc, "nome")) {
-		    var _dialogo = instance_create_layer(x, y, "Dialogo", oDialogo);
-		    _dialogo.npc_nome = _npc.nome;
-		}
-	}
+    if keyboard_check_pressed(ord("E")) and global.dialogo == false {
+        var _npc = instance_nearest(x, y, oParNPC);
+        
+        if (variable_instance_exists(_npc, "nome")) {
+            var _dialogo = instance_create_layer(x, y, "Dialogo", oDialogo);
+            _dialogo.npc_nome = _npc.nome;
+            
+            global.dialogo = true; 
+            
+            keyboard_clear(ord("E")); 
+        }
+    }
 }
 
 depth = -bbox_bottom;

@@ -1,9 +1,10 @@
 if (global.saci_derrotado == true) {
-    var _yFinal = 70; 
+    // 1. Destrói o gatilho da cutscene
+    if (instance_exists(oGatilhoSaci)) { // Confirme o nome do seu gatilho do saci
+        instance_destroy(oGatilhoSaci);
+    }
     
-    var _inst = instance_create_layer(x, _yFinal, "Instances", oSaciDerrotado);
-    _inst.npc_nome = "SaciDerrotado";
-    
+    // 2. Destrói a si mesmo
     instance_destroy();
     exit; 
 }

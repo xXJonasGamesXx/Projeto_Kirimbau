@@ -3,10 +3,10 @@ if inicializar == false {
 	inicializar = true;
 }
 
-if mouse_check_button_pressed(mb_left) {
-	if pagina < ds_grid_height(texto_grid) - 1 {
-		pagina++;
-	} else {
+if (keyboard_check_pressed(ord("E"))) {
+    if pagina < ds_grid_height(texto_grid) - 1 {
+        pagina++;
+    } else {
         // Ações finais baseadas na etiqueta
         if (acao_final == "terminou_conversa_pai") {
             global.falou_com_pai = true;
@@ -26,7 +26,10 @@ if mouse_check_button_pressed(mb_left) {
     acao_final = ""; 
 }
         
-		global.dialogo = false;
-		instance_destroy();
-	}
+		global.dialogo = false; 
+        
+        keyboard_clear(ord("E")); 
+        
+        instance_destroy(); 
+    }
 }

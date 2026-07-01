@@ -14,3 +14,5 @@ inicializar = false;
 acao_final = "";
 
 global.curupira_evento_feito = false;
+
+global.dialogo = true;

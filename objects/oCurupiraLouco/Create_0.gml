@@ -1,9 +1,10 @@
 if (global.curupira_derrotado == true) {
-    var _yFinal = 75; 
+    // 1. Destrói o gatilho da cutscene para não travar o jogador
+    if (instance_exists(oGatilhoCurupira)) {
+        instance_destroy(oGatilhoCurupira);
+    }
     
-    var _inst = instance_create_layer(x, _yFinal, "Instances", oCurupiraDerrotado);
-    _inst.npc_nome = "CurupiraDerrotado";
-    
+    // 2. Destrói a si mesmo (ele não spawna a versão boazinha, apenas some)
     instance_destroy();
     exit; 
 }
