@@ -4,6 +4,7 @@ function scr_textos(){
 			ds_grid_add_text("Iara, volte a dormir!", sIconPai, 1, "Pai");
 			ds_grid_add_text("Está muito cedo, eu e sua mãe estamos indo trabalhar", sIconPai, 1, "Pai");
 			ds_grid_add_text("Se comporte, senão a CUCA aparece...", sIconPai, 1, "Pai");
+			acao_final = "terminou_conversa_pai";
 		break;
 		
 		case "Cama":
@@ -36,6 +37,15 @@ function scr_textos(){
 			ds_grid_add_text("Eu vou atras dela! Não da mais.", Iara_ParadaF, 0, "Iara");
 			ds_grid_add_text("Boa sorte garota, e cuidado!!", sCurupiraDerrotado, 1, "Curupira");
 		break;
+		
+		case "PegouFruta":
+			ds_grid_add_text("Pegou uma fruta", sFruta, 1, "Arvore");
+		break;
+		
+		case "ArvoreVazia":
+			ds_grid_add_text("A arvore está sem frutas", sFruta, 1, "Arvore");
+		break;
+		
 	}
 }
 

@@ -8,8 +8,8 @@
   "name":"obj_checkpoint",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"Itens",
+    "path":"folders/Objetos/Itens.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -34,5 +34,5 @@
     "path":"sprites/spr_check/spr_check.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

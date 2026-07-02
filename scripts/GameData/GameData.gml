@@ -42,28 +42,87 @@ global.actionLibrary =
         }
     },
 	
-	prender : 
+	usar_fruta : 
     {
-        name : "Prender",
-        description : "{0} tenta prender!",
+        name : "Fruta",
+        description : "{0} come uma Fruta e cura vida!",
+        subMenu : -1,
+        targetRequired : false,
+        targetEnemyByDefault : false,
+        targetAll : MODE.NEVER,
+        userAnimation : "defend",
+        effectSprite : -1,
+        effectOnTarget : MODE.NEVER,
+        func : function(_user, _targets)
+        {
+            if (InventorySearch(0) != -1) { 
+                InventoryRemove(0); 
+                BattleChangeHP(_user, 40, 0); 
+            } else {
+                BattleChangeHP(_user, 0, 0); 
+            }
+        }
+    },
+
+    usar_garrafa : 
+    {
+        name : "Usar Garrafa",
+        description : "{0} tenta usar a Garrafa no inimigo!",
         subMenu : -1,
         targetRequired : true,
         targetEnemyByDefault : true,
         targetAll : MODE.NEVER,
         userAnimation : "prender",
-        effectSprite : sCurupiraLouco,
+        effectSprite : sSaciLouco,
         effectOnTarget : MODE.ALWAYS,
         func : function(_user, _targets)
         {
-            var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
-            
-           
-            if (variable_instance_exists(_targets[0], "isDefending") && _targets[0].isDefending == true) 
-            {
-                _damage = ceil(_damage / 2); 
+            if (InventorySearch(1) != -1) { 
+                if (_targets[0].name == "Saci") { 
+                    
+                    var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+                    if (variable_instance_exists(_targets[0], "isDefending") && _targets[0].isDefending == true) {
+                        _damage = ceil(_damage / 2); 
+                    }
+                    BattleChangeHP(_targets[0], -_damage, 0);
+                    
+                } else {
+                    BattleChangeHP(_targets[0], 0, 0); 
+                }
+            } else {
+                BattleChangeHP(_targets[0], 0, 0); 
             }
-
-            BattleChangeHP(_targets[0], -_damage, 0);
+        }
+    },
+    
+    usar_cipo : 
+    {
+        name : "Amarrar Cipó",
+        description : "{0} tenta amarrar com o Cipó!",
+        subMenu : -1,
+        targetRequired : true,
+        targetEnemyByDefault : true,
+        targetAll : MODE.NEVER,
+        userAnimation : "prender",
+        effectSprite : sCurupiraLouco, 
+        effectOnTarget : MODE.ALWAYS,
+        func : function(_user, _targets)
+        {
+            if (InventorySearch(2) != -1) { 
+                if (_targets[0].name == "Curupira") { 
+                
+                    var _damage = ceil(_user.strength + random_range(-_user.strength * 0.25, _user.strength * 0.25));
+                    if (variable_instance_exists(_targets[0], "isDefending") && _targets[0].isDefending == true) {
+                        _damage = ceil(_damage / 2); 
+                    }
+                    BattleChangeHP(_targets[0], -_damage, 0);
+                    
+                } else {
+                    BattleChangeHP(_targets[0], 0, 0); 
+                }
+            } else {
+                BattleChangeHP(_targets[0], 0, 0); 
+            }
         }
     }
 	
@@ -84,7 +143,7 @@ global.party=
 			hpMax: 100,
 			strength: 6,
 			sprites: {idle: Iara_ParadaL, prender: Iara_ParadaL , defend: Iara_ParadaL , down: Iara_ParadaL },
-			actions : [global.actionLibrary.prender, global.actionLibrary.defend]
+			actions : [global.actionLibrary.defend, global.actionLibrary.usar_fruta, global.actionLibrary.usar_garrafa, global.actionLibrary.usar_cipo]
 		}
 	];
 	

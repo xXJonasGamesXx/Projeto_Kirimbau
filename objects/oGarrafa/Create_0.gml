@@ -1,0 +1,1 @@
+if (InventorySearch(1) != -1) { instance_destroy(); }

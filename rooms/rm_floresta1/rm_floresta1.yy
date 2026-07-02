@@ -23,6 +23,7 @@
     {"name":"inst_5D08A326","path":"rooms/rm_floresta1/rm_floresta1.yy",},
     {"name":"inst_53F33E06","path":"rooms/rm_floresta1/rm_floresta1.yy",},
     {"name":"inst_4F4C41DC","path":"rooms/rm_floresta1/rm_floresta1.yy",},
+    {"name":"inst_57A05988","path":"rooms/rm_floresta1/rm_floresta1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -45,6 +46,7 @@
         {"$GMRInstance":"v4","%Name":"inst_5D08A326","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5D08A326","objectId":{"name":"oParede","path":"objects/oParede/oParede.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.3125,"scaleY":0.25,"x":37.0,"y":91.0,},
         {"$GMRInstance":"v4","%Name":"inst_53F33E06","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_53F33E06","objectId":{"name":"oParede","path":"objects/oParede/oParede.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.375,"scaleY":0.75,"x":37.0,"y":79.0,},
         {"$GMRInstance":"v4","%Name":"inst_4F4C41DC","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4F4C41DC","objectId":{"name":"oParede","path":"objects/oParede/oParede.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.3125,"scaleY":0.25,"x":32.0,"y":79.0,},
+        {"$GMRInstance":"v4","%Name":"inst_57A05988","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_57A05988","objectId":{"name":"oGarrafa","path":"objects/oGarrafa/oGarrafa.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.71428573,"scaleY":0.78571427,"x":155.5,"y":99.5,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"sfloresta2","path":"sprites/sfloresta2/sfloresta2.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":true,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
