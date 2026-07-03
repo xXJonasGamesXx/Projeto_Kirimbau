@@ -4,7 +4,7 @@ if (global.curupira_derrotado == true) {
 }
 
 ato_da_cena = 0; 
-curupira_y_destino = 75; // Onde ele deve parar
-curupira_velocidade = 2; // Velocidade do passo
+curupira_y_destino = 75; 
+curupira_velocidade = 2; 
 
 

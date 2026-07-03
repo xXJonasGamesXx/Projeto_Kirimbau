@@ -143,7 +143,7 @@ global.party=
 			hpMax: 100,
 			strength: 6,
 			sprites: {idle: Iara_ParadaL, prender: Iara_ParadaL , defend: Iara_ParadaL , down: Iara_ParadaL },
-			actions : [global.actionLibrary.defend, global.actionLibrary.usar_fruta, global.actionLibrary.usar_garrafa, global.actionLibrary.usar_cipo]
+			actions : [global.actionLibrary.defend]
 		}
 	];
 	

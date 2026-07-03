@@ -1,5 +1,5 @@
 duration = 120;
-targetRoom = Quarto;
+targetRoom = rm_Quarto;
 color = c_white;
 
 timer = 0;

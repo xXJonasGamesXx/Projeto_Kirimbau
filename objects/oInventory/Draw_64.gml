@@ -29,7 +29,17 @@ if (show_inventory)
         
         if (global.inventory[i] != -1)
         {
-            draw_sprite_stretched(sFruta, global.inventory[i], xx, yy, _slot_size, _slot_size);
+            var _sprite_do_item = sFruta; 
+            
+            if (global.inventory[i] == 0) {
+                _sprite_do_item = sFruta;
+            } else if (global.inventory[i] == 1) {
+                _sprite_do_item = sGarrafaP;
+            } else if (global.inventory[i] == 2) {
+                _sprite_do_item = sCipo;
+            }
+            
+            draw_sprite_stretched(_sprite_do_item, 0, xx, yy, _slot_size, _slot_size);
         }
     }
 }

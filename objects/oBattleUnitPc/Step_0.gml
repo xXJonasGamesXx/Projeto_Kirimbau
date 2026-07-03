@@ -7,3 +7,5 @@ else
 {
 	if (sprite_index == sprites.down) sprite_index = sprites.idle;
 }
+
+global.party[0].hp = hp;

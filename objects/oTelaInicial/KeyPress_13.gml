@@ -3,7 +3,7 @@ if (index == 0) {
     // Reseta o load caso o jogador tenha morrido e tentado um jogo novo
     global.load_x = -1;
     global.load_y = -1;
-    room_goto(Quarto); // Vai para a primeira sala do jogo
+    room_goto(rm_Quarto); // Vai para a primeira sala do jogo
 } 
 else if (index == 1) {
     // OPÇÃO 1: CARREGAR JOGO
