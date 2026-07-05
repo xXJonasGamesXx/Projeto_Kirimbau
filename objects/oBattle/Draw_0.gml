@@ -1,12 +1,20 @@
 draw_sprite(battleBackground, 0, x, y);
 
 var _unitWithCurrentTurn = unitTurnOrder[turn].id;
+
 for (var i = 0; i < array_length(unitRenderOrder); i++)
 {
-	with (unitRenderOrder[i])
-	{
-		draw_self();
-	}
+    with (unitRenderOrder[i])
+    {
+        // O efeito de piscar branco continua funcionando!
+        if (hp <= 0 && object_index != oBattleUnitPc) {
+            gpu_set_fog(true, c_white, 0, 1);
+            draw_self();
+            gpu_set_fog(false, c_white, 0, 1);
+        } else {
+            draw_self();
+        }
+    }
 }
 
 draw_sprite_stretched(sBox, 0, x+75, y+120, 245, 60);

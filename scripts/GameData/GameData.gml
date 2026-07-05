@@ -124,7 +124,19 @@ global.actionLibrary =
                 BattleChangeHP(_targets[0], 0, 0); 
             }
         }
+    },
+	
+	implorar :
+	{
+    name: "Implorar",
+    description: "Tenta dialogar e acalmar o inimigo.",
+	subMenu: -1,
+    targetRequired: true,
+    func: function() {
+        instance_create_depth(0, 0, -9999, oQTE_Implorar);
+        return true; 
     }
+}
 	
 } 
 

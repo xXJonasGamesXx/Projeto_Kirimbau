@@ -28,6 +28,7 @@
     {"name":"inst_61DC1F0","path":"rooms/rm_CavernaCuca/rm_CavernaCuca.yy",},
     {"name":"inst_1DACB900","path":"rooms/rm_CavernaCuca/rm_CavernaCuca.yy",},
     {"name":"inst_22E78C78","path":"rooms/rm_CavernaCuca/rm_CavernaCuca.yy",},
+    {"name":"inst_61CF58BD","path":"rooms/rm_CavernaCuca/rm_CavernaCuca.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -54,6 +55,7 @@
         {"$GMRInstance":"v4","%Name":"inst_61DC1F0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_61DC1F0","objectId":{"name":"oParede","path":"objects/oParede/oParede.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":11.25,"scaleY":0.6875,"x":0.0,"y":210.0,},
         {"$GMRInstance":"v4","%Name":"inst_1DACB900","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1DACB900","objectId":{"name":"oParede","path":"objects/oParede/oParede.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.375,"scaleY":1.875,"x":-6.0,"y":180.5,},
         {"$GMRInstance":"v4","%Name":"inst_22E78C78","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_22E78C78","objectId":{"name":"oParede","path":"objects/oParede/oParede.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.5625,"scaleY":2.375,"x":429.5,"y":82.0,},
+        {"$GMRInstance":"v4","%Name":"inst_61CF58BD","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_61CF58BD","objectId":{"name":"oGatilhoCuca","path":"objects/oGatilhoCuca/oGatilhoCuca.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":13.125,"x":230.0,"y":30.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Tiles_3","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_3","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":9,"SerialiseWidth":16,"TileCompressedData":[
           -23,-2147483648,1,7,-5,-2147483648,1,7,-8,-2147483648,1,2,-7,-2147483648,1,2,-7,-2147483648,1,6,-7,-2147483648,
