@@ -1,17 +1,14 @@
-if (state == 0) {
-	timer++;
-	
-	if(timer >= duration) {
-		room_goto(targetRoom);
-		
-		state = 1;
-	}
+show_debug_message("Fade rodando! Alpha atual: " + string(alpha));
+
+if (fade_state == 1) {
+    alpha += fade_speed;
+    if (alpha >= 1) {
+        room_goto(targetRoom);
+        fade_state = -1;
+    }
+} else {
+    alpha -= fade_speed;
+    if (alpha <= 0) {
+        instance_destroy();
+    }
 }
-else if (state == 1){
-	timer--;
-	
-if (timer <0) {
-	instance_destroy();
-}
-}
-alpha = timer / duration;

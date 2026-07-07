@@ -1,6 +1,6 @@
 window_set_fullscreen(true);
 
-opcoes = ["novo jogo", "carregar", "opções", "sair"]
+opcoes = ["novo jogo", "carregar", "Botões", "sair"]
 index = 0;
 
 op_max = array_length(opcoes);

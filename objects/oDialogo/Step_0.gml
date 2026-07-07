@@ -72,7 +72,6 @@ if (keyboard_check_pressed(ord("E"))) {
         
         var _acoes_iara = [global.actionLibrary.defend, global.actionLibrary.implorar]; 
         
-        // Faltava colocar os seus itens aqui dentro!
         if (InventorySearch(0) != -1) array_push(_acoes_iara, global.actionLibrary.usar_fruta);
         if (InventorySearch(1) != -1) array_push(_acoes_iara, global.actionLibrary.usar_garrafa);
         if (InventorySearch(2) != -1) array_push(_acoes_iara, global.actionLibrary.usar_cipo);

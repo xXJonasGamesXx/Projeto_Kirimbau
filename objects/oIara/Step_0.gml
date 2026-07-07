@@ -50,6 +50,12 @@ if distance_to_object(oParNPC) <= 10 {
     }
 }
 
+if (keyboard_check_pressed(ord("M"))) {
+    global.dialogo = false; 
+    
+    room_goto(Tela_Inicial);
+}
+
 depth = -bbox_bottom;
 
 

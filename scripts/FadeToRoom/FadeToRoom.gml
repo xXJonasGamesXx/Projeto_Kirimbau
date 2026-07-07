@@ -1,17 +1,11 @@
-/// @arg room
-/// @arg duration 
-/// @arg color
+function FadeToRoom(_room, _dur, _color) {
+    var _inst = instance_create_depth(0, 0, -99999, oFade);
 
-
-
-var _room = argument[0];
-var _dur = argument[1];
-var _color = argument[2];
-
-var _inst = instance_create_depth(0, 0, 0, oFade);
-
-with(_inst) {
-	targetRoom = _room;
-	duration = _dur;
-	color = _color;
+    with(_inst) {
+        targetRoom = _room;
+        duration = _dur;
+        color = _color;
+        
+        fade_speed = 1 / duration; 
+    }
 }

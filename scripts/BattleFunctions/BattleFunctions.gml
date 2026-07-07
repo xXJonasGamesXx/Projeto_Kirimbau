@@ -11,27 +11,54 @@ function NewEncounter(_enemies, _bg, _encounter_creator = noone) {
     });
 }
 
-function BattleChangeHP(_target, _amount, _AliveDeadOrEither = 0)
+function BattleChangeHP(_target, _amount, _aliveDeadOrEither)
 {
-    //_AliveDeadOrEither: 0 = alive only, 1 = dead only, 2 = any
     var _failed = false;
-    if (_AliveDeadOrEither == 0) && (_target.hp <= 0) _failed = true;
-    if (_AliveDeadOrEither == 1) && (_target.hp > 0) _failed = true;
+    if (_aliveDeadOrEither == 0) && (_target.hp <= 0) _failed = true;
+    if (_aliveDeadOrEither == 1) && (_target.hp > 0) _failed = true;
 
     var _col = c_white;
-    if (_amount > 0) _col = c_lime;
-    if (_failed)
+    var _text_to_show = "";
+
+    if (!_failed)
     {
-        _col = c_white;
-        _amount = "failed";
+        _target.hp += _amount;
+        _target.hp = clamp(_target.hp, 0, _target.hpMax);
+
+        if (_amount < 0)
+        { 
+            if (_target.object_index != oBattleUnitPc) 
+            { 
+                _text_to_show = string(abs(_amount)) + "% Contido!";
+                _col = c_aqua; 
+            } 
+            else 
+            { 
+                _text_to_show = string(_amount); 
+                _col = c_red;
+            }
+        } 
+        else if (_amount > 0) 
+        { 
+            _text_to_show = "+" + string(_amount);
+            _col = c_green;
+        } 
+        else 
+        { 
+            _text_to_show = "0";
+            _col = c_white;
+        }
     }
-    instance_create_depth
-    (
-        _target.x,
-        _target.y,
-        _target.depth-1,
-        oBattleFloatingText,
-        {font: fnt_batalha, col: _col, text: string(_amount)}
-    );
-    if (!_failed) _target.hp = clamp(_target.hp + _amount, 0, _target.hpMax);
+    else 
+    {
+        _text_to_show = "Falhou";
+        _col = c_gray;
+    }
+
+    if (_text_to_show != "")
+    {
+        var _inst = instance_create_depth(_target.x, _target.y, _target.depth - 1, oBattleFloatingText);
+        _inst.text = _text_to_show;
+        _inst.col = _col;
+    }
 }

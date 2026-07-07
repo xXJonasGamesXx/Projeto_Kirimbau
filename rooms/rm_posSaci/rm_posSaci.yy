@@ -18,8 +18,8 @@
   "isDnd":false,
   "layers":[
     {"$GMRTileLayer":"","%Name":"Tiles_3","depth":-15000,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_3","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":6,"SerialiseWidth":11,"TileCompressedData":[
-          -10,0,1,-2147483648,-10,0,-7,-2147483648,1,43,-15,-2147483648,22,38,0,38,40,38,38,40,38,40,38,38,49,
-          51,49,51,49,49,51,49,51,49,49,
+          -10,0,1,-2147483648,-10,0,-7,-2147483648,1,0,-15,-2147483648,22,38,0,38,40,38,38,40,38,40,38,38,49,51,
+          49,51,49,49,51,49,51,49,49,
         ],"TileDataFormat":1,},"tilesetId":{"name":"tFloresta","path":"tilesets/tFloresta/tFloresta.yy",},"userdefinedDepth":true,"visible":true,"x":0,"y":0,},
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_33F425A1","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_33F425A1","objectId":{"name":"oTransicao","path":"objects/oTransicao/oTransicao.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.125,"scaleY":1.375,"x":329.0,"y":94.0,},

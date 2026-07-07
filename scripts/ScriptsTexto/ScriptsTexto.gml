@@ -68,7 +68,7 @@ function scr_textos(){
 		break;
 		
 		case "Cuca_Inicio":
-		    ds_grid_add_text("Você! Mais uma criança para sujar e destruir a minha floresta!", sCucaDerrotada, 1, "Cuca");
+		    ds_grid_add_text("Você! Mais uma criança para sujar e destruir a minha floresta!",sCucaDerrotada, 1, "Cuca");
 		    ds_grid_add_text("Eu vou transformar você em ensopado agora mesmo!", sCucaDerrotada, 1, "Cuca");
 		break;
 
@@ -86,7 +86,7 @@ function scr_textos(){
 		    ds_grid_add_text("Nós podemos resolver isso sem brigar! Eu prometo!", sIconIara, 0, "Iara");
 		break;
 
-		case "Cuca_Desabafo":
+		case "CucaDerrotada":
 		    ds_grid_add_text("POR QUE VOCÊ NÃO ATACA?!", sCucaDerrotada, 1, "Cuca");
 		    ds_grid_add_text("As crianças não acreditam mais na gente... O folclore está desaparecendo.", sCucaDerrotada, 1, "Cuca");
 		    ds_grid_add_text("Tudo o que eu fiz foi tentar manter nossa memória viva, mesmo que fosse pelo medo.", sCucaDerrotada, 1, "Cuca");
@@ -94,9 +94,9 @@ function scr_textos(){
 		    acao_final = "cuca_invoca_cama";
 		break;
 
-		case "Cama_Final":
-		    ds_grid_add_text("Ela trouxe a minha cama... É a minha chance de voltar e não esquecer.", sIconIara, 0, "Iara");
-		    acao_final = "dormir_e_zerar";
+		case "CamaFim":
+			ds_grid_add_text("Acabou... acho que finalmente posso descansar.", sIconIara, 0, "Iara"); 
+			acao_final = "dormir_e_zerar"; 
 		break;
 		
 	}
