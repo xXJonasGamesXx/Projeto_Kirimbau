@@ -4,7 +4,7 @@
   "bboxMode":0,
   "bbox_bottom":42,
   "bbox_left":0,
-  "bbox_right":48,
+  "bbox_right":108,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"d45da1ea-26b0-405c-9118-ef0079aee997","name":"d45da1ea-26b0-405c-9118-ef0079aee997","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"30845abd-43ea-4f18-bc76-0694b9ddc300","name":"30845abd-43ea-4f18-bc76-0694b9ddc300","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":43,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"b788b05c-cc1b-491a-bd74-8b03c7a07268","blendMode":0,"displayName":"default","isLocked":false,"name":"b788b05c-cc1b-491a-bd74-8b03c7a07268","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"c4bc535c-b040-404b-b4a8-9d3e1aeeba47","blendMode":0,"displayName":"default","isLocked":false,"name":"c4bc535c-b040-404b-b4a8-9d3e1aeeba47","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"sCucaDerrotada",
   "nineSlice":null,
@@ -69,13 +69,13 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d45da1ea-26b0-405c-9118-ef0079aee997","path":"sprites/sCucaDerrotada/sCucaDerrotada.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"c91bc151-2efb-4b0a-847b-bddec8034aab","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"30845abd-43ea-4f18-bc76-0694b9ddc300","path":"sprites/sCucaDerrotada/sCucaDerrotada.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"16fd7406-0684-4c92-a6b6-5f9a6df3ad98","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":24,
+    "xorigin":54,
     "yorigin":21,
   },
   "swatchColours":null,
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":49,
+  "width":109,
 }

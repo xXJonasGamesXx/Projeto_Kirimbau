@@ -29,7 +29,7 @@ if (ato_da_cena == 2) {
             
             global.party[0].actions = _acoes_iara;
             
-            NewEncounter([global.enemies.Saci], sBatalha, oSaciLouco.id);
+            NewEncounter([global.enemies.Saci], sBatalhasFloresta, oSaciLouco.id);
         }
         
         instance_destroy();

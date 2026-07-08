@@ -1,7 +1,7 @@
 {
   "$GMRoom":"v1",
   "%Name":"rm_posCurupira",
-  "creationCodeFile":"",
+  "creationCodeFile":"rooms/rm_posCurupira/RoomCreationCode.gml",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,

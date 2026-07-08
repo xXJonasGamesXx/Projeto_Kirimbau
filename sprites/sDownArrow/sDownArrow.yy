@@ -23,7 +23,7 @@
   ],
   "name":"sDownArrow",
   "nineSlice":null,
-  "origin":1,
+  "origin":9,
   "parent":{
     "name":"Sprites",
     "path":"folders/Sprites.yy",
@@ -76,7 +76,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":2,
-    "yorigin":0,
+    "yorigin":1,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

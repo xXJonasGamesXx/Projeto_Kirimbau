@@ -38,7 +38,7 @@ if (keyboard_check_pressed(ord("E"))) {
                 
                 global.party[0].actions = _acoes_iara;
                 
-                NewEncounter([global.enemies.Curupira], sBatalha, _curupira.id);
+                NewEncounter([global.enemies.Curupira], sBatalhasFloresta, _curupira.id);
             }
             
             acao_final = ""; 
@@ -78,7 +78,7 @@ if (keyboard_check_pressed(ord("E"))) {
         
         global.party[0].actions = _acoes_iara;
         
-        NewEncounter([global.enemies.Cuca], sBatalha, _cuca.id);
+        NewEncounter([global.enemies.Cuca], sBatalhaCaverna, _cuca.id);
     }
     
     acao_final = ""; 
@@ -86,7 +86,7 @@ if (keyboard_check_pressed(ord("E"))) {
         
         else if (acao_final == "cuca_invoca_cama") {
             if (instance_exists(oIara)) {
-                instance_create_depth(oIara.x + 30, oIara.y, -9999, oBrilhos);
+                instance_create_depth(oIara.x + 30, oIara.y + 30, -9999, oBrilhos);
             }
             
             acao_final = "";
@@ -108,8 +108,9 @@ if (keyboard_check_pressed(ord("E"))) {
             acao_final = ""; 
         }
         
-        
         global.dialogo = false; 
+        
+        io_clear(); 
         keyboard_clear(ord("E")); 
         instance_destroy(); 
     }

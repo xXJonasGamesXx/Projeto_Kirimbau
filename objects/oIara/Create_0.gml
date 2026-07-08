@@ -15,3 +15,5 @@ if (instance_number(object_index) > 1) {
     exit;
 }
 
+camera_set_view_target(view_camera[0], id);
+

@@ -1,7 +1,7 @@
 {
   "$GMRoom":"v1",
   "%Name":"rm_quintal",
-  "creationCodeFile":"",
+  "creationCodeFile":"rooms/rm_quintal/RoomCreationCode.gml",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,

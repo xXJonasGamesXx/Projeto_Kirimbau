@@ -6,7 +6,6 @@ if (distance_to_object(oIara) <= 15) {
         if (animacao_rolando == false) {
             var _dialogo = instance_create_depth(x, y, -9999, oDialogo);
             
-            // Checa a sala para puxar o texto certo!
             if (room == rm_CavernaCuca) {
                 _dialogo.npc_nome = "CamaFim"; 
             } else {

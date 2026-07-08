@@ -1,0 +1,1 @@
+audio_play_sound(snd_briga, 1, false);

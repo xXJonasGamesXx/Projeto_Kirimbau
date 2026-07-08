@@ -9,7 +9,7 @@ global.actionLibrary =
         targetEnemyByDefault : true,
         targetAll : MODE.NEVER,
         userAnimation : "attack",
-        effectSprite : sCurupiraLouco,
+        effectSprite : sEfeito,
         effectOnTarget : MODE.ALWAYS,
         func : function(_user, _targets)
         {
@@ -66,14 +66,14 @@ global.actionLibrary =
 
     usar_garrafa : 
     {
-        name : "Usar Garrafa",
+        name : "Garrafa",
         description : "{0} tenta usar a Garrafa no inimigo!",
         subMenu : -1,
         targetRequired : true,
         targetEnemyByDefault : true,
         targetAll : MODE.NEVER,
         userAnimation : "prender",
-        effectSprite : sSaciLouco,
+        effectSprite : sEfeito,
         effectOnTarget : MODE.ALWAYS,
         func : function(_user, _targets)
         {
@@ -97,14 +97,14 @@ global.actionLibrary =
     
     usar_cipo : 
     {
-        name : "Amarrar Cipó",
+        name : "Cipó",
         description : "{0} tenta amarrar com o Cipó!",
         subMenu : -1,
         targetRequired : true,
         targetEnemyByDefault : true,
         targetAll : MODE.NEVER,
         userAnimation : "prender",
-        effectSprite : sCurupiraLouco, 
+        effectSprite : sEfeito, 
         effectOnTarget : MODE.ALWAYS,
         func : function(_user, _targets)
         {
@@ -154,7 +154,7 @@ global.party=
 			hp: 100,
 			hpMax: 100,
 			strength: 6,
-			sprites: {idle: Iara_ParadaL, prender: Iara_ParadaL , defend: Iara_ParadaL , down: Iara_ParadaL },
+			sprites: {idle: sIconIara, prender: sIconIaraForca , defend: sIconIaraDefesa , down: sIconIaraMorta },
 			actions : [global.actionLibrary.defend]
 		}
 	];
@@ -204,7 +204,7 @@ global.enemies=
 			hp: 150,
 			hpMax: 150,
 			strength: 10,
-			sprites: {idle: sCucaLouca, attack: sCucaLouca },
+			sprites: {idle: sCucaLoucaB, attack: sCucaLoucaB },
 			actions : [global.actionLibrary.attack],
 			AIscript : function()
 			{

@@ -1,1 +1,1 @@
-sprite_index = sSaciDerrotado
+estado_fade = 1;

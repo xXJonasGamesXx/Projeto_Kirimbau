@@ -1,3 +1,6 @@
+keyboard_clear(ord("E"));
+io_clear();
+
 instance_deactivate_all(true);
 
 units = [];
@@ -15,14 +18,19 @@ currentTargets = noone;
 
 for (var i = 0; i < array_length(enemies); i++)
 {
-	enemyUnits[i] = instance_create_depth(x+250+(i*10), y+68+(i*20), depth-10, oBattleUnitEnemy, enemies[i]);
-	array_push(units, enemyUnits[i]);
+    enemyUnits[i] = instance_create_depth(x+160+(i*10), y+60+(i*20), depth-10, oBattleUnitEnemy, enemies[i]);
+    array_push(units, enemyUnits[i]);
 }
 
 for (var i = 0; i < array_length(global.party); i++)
 {
-	partyUnits[i] = instance_create_depth(x+70+(i*10), y+68+(i*15), depth-10, oBattleUnitPc, global.party[i]);
-	array_push(units, partyUnits[i]);
+    var _iara_inst = instance_create_depth(x + 260, y + 175, depth-10, oBattleUnitPc, global.party[i]);
+    
+    _iara_inst.image_xscale = -0.17; 
+    _iara_inst.image_yscale = 0.17;
+    
+    partyUnits[i] = _iara_inst;
+    array_push(units, partyUnits[i]);
 }
 
 unitTurnOrder = array_shuffle(units);
@@ -104,18 +112,37 @@ function BeginAction(_user, _action, _targets)
     currentUser = _user;
     currentAction = _action;
     currentTargets = _targets;
-	battleText = string_ext(_action.description, [_user.name])
+    battleText = string_ext(_action.description, [_user.name]);
     if (!is_array(currentTargets)) currentTargets = [currentTargets];
     battleWaitTimeRemaining = battleWaitTimeFrames;
+    
     with (_user)
     {
         acting = true;
-        if (!is_undefined(_action[$ "userAnimation"])) && (!is_undefined(_user.sprites[$ _action.userAnimation]))
-        {
-            sprite_index = sprites[$ _action.userAnimation];
-            image_index = 0;
+        
+        if (object_index == oBattleUnitPc) {
+            
+            if (variable_struct_exists(_action, "userAnimation")) {
+                if (_action.userAnimation == "defend") {
+                    sprite_index = sIconIaraDefesa; 
+                } else if (_action.userAnimation == "prender") {
+                    sprite_index = sIconIaraForca;  
+                }
+            }
+            
+        } 
+        else {
+            if (!is_undefined(_action[$ "userAnimation"])) {
+                var _animName = _action.userAnimation;
+                if (variable_struct_exists(sprites, _animName)) {
+                    sprite_index = sprites[$ _animName];
+                }
+            }
         }
+        
+        image_index = 0;
     }
+    
     battleState = BattleStatePerformAction;
 }
 
@@ -123,29 +150,38 @@ function BattleStatePerformAction()
 {
     if (currentUser.acting)
     {
-        if (currentUser.image_index >= currentUser.image_number -1)
+        if (currentUser.image_index >= currentUser.image_number - 1)
         {
             with (currentUser)
             {
-                sprite_index = sprites.idle;
+                if (object_index != oBattleUnitPc) {
+                    sprite_index = sprites.idle;
+                }
+                
                 image_index = 0;
                 acting = false;
             }
 
-            if (variable_struct_exists(currentAction, "effectSprite"))
+            if (variable_struct_exists(currentAction, "effectSprite") && currentAction.effectSprite != -1)
             {
                 if (currentAction.effectOnTarget == MODE.ALWAYS) || ( (currentAction.effectOnTarget == MODE.VARIES) && (array_length(currentTargets) <= 1) )
                 {
                     for (var i = 0; i < array_length(currentTargets); i++)
                     {
-                        instance_create_depth(currentTargets[i].x, currentTargets[i].y, currentTargets[i].depth-1, oBattleEffect, {sprite_index : currentAction.effectSprite});
+                        var _alvo = currentTargets[i];
+                        
+                        var _centro_x = _alvo.bbox_left + (_alvo.bbox_right - _alvo.bbox_left) / 2;
+                        var _centro_y = _alvo.bbox_top + (_alvo.bbox_bottom - _alvo.bbox_top) / 2;
+                        
+                        instance_create_depth(_centro_x, _centro_y, _alvo.depth-1, oBattleEffect, {sprite_index : currentAction.effectSprite});
                     }
                 }
                 else 
                 {
                     var _effectSprite = currentAction.effectSprite
                     if (variable_struct_exists(currentAction, "effectSpriteNoTarget")) _effectSprite = currentAction.effectSpriteNoTarget;
-                    instance_create_depth(x, y, depth-100, oBattleEffect, {sprite_index : _effectSprite});
+                    
+                    instance_create_depth(x + 158, y + 89, depth-100, oBattleEffect, {sprite_index : _effectSprite});
                 }
             }
             currentAction.func(currentUser, currentTargets);
@@ -155,9 +191,16 @@ function BattleStatePerformAction()
     {
         if (!instance_exists(oBattleEffect))
         {
-            battleWaitTimeRemaining--
-            if (battleWaitTimeRemaining == 0)
+            battleWaitTimeRemaining--;
+            
+            if (battleWaitTimeRemaining <= 0)
             {
+                with (currentUser) {
+                    if (object_index == oBattleUnitPc) {
+                        sprite_index = sIconIara;
+                    }
+                }
+                
                 battleState = BattleStateVictoryCheck;
             }
         }

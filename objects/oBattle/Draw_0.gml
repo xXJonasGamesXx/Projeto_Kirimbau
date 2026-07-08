@@ -1,12 +1,14 @@
 draw_sprite(battleBackground, 0, x, y);
 
+draw_sprite_stretched(sBox, 0, x+75, y+120, 245, 60);
+draw_sprite_stretched(sBox, 0, x, y+120, 74, 60);
+
 var _unitWithCurrentTurn = unitTurnOrder[turn].id;
 
 for (var i = 0; i < array_length(unitRenderOrder); i++)
 {
     with (unitRenderOrder[i])
     {
-        // O efeito de piscar branco continua funcionando!
         if (hp <= 0 && object_index != oBattleUnitPc) {
             gpu_set_fog(true, c_white, 0, 1);
             draw_self();
@@ -16,9 +18,6 @@ for (var i = 0; i < array_length(unitRenderOrder); i++)
         }
     }
 }
-
-draw_sprite_stretched(sBox, 0, x+75, y+120, 245, 60);
-draw_sprite_stretched(sBox, 0, x, y+120, 74, 60);
 
 #macro COLUMN_ENEMY 15
 #macro COLUMN_NAME 90
@@ -32,7 +31,6 @@ draw_text(x+COLUMN_ENEMY, y+120, "INIMIGO");
 draw_text(x+COLUMN_NAME, y+120, "NOME");
 draw_text(x+COLUMN_HP, y+120, "HP");
 
-//Draw enemy names
 draw_set_font(fnt_batalha);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
@@ -52,7 +50,6 @@ for (var i = 0; (i < array_length(enemyUnits)) && (_drawn < _drawLimit); i++)
     }
 }
 
-//Draw party info
 for (var i = 0; i < array_length(partyUnits); i++)
 {
     draw_set_halign(fa_left);
@@ -73,9 +70,9 @@ for (var i = 0; i < array_length(partyUnits); i++)
 
 if (battleText != "")
 {
-	var _w = string_width(battleText)+20;
-	draw_sprite_stretched(sBox, 0, x+160 - (_w*0.5), y+5, _w, 25);
-	draw_set_halign(fa_center);
-	draw_set_colour(c_white);
-	draw_text(x+160, y+10, battleText);
+    var _w = string_width(battleText)+20;
+    draw_sprite_stretched(sBox, 0, x+160 - (_w*0.5), y+5, _w, 25);
+    draw_set_halign(fa_center);
+    draw_set_colour(c_white);
+    draw_text(x+160, y+10, battleText);
 }

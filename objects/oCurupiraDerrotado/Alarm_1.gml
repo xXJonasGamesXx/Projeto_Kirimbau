@@ -1,1 +1,1 @@
-sprite_index = sCurupiraDerrotado;
+estado_fade = 1;
